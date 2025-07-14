@@ -1,0 +1,3469 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADEMA</title>
+    <!-- Fuente similar a la del prototipo -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Apunta al CSS global -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Tabs de navegación -->
+      <nav class="tabs">
+        <button class="tab-button active" data-target="inicio">Inicio</button>
+        <button class="tab-button" data-target="quienes">
+          ¿Quiénes Somos?
+        </button>
+      </nav>
+
+      <!-- Pantalla Inicio -->
+      <section id="inicio" class="screen active">
+        <div class="inicio-left">
+          <h1 class="logo-decorada">
+            <span>A</span><span>D</span><span>E</span><span>M</span
+            ><span>A</span>
+          </h1>
+          <div class="home-buttons">
+            <button class="btn primary" data-target="materias">Iniciar</button>
+            <a href="horarios.html" class="btn secondary btn-horarios"
+              >Ver horarios de clases</a
+            >
+          </div>
+        </div>
+
+        <div class="inicio-right">
+          <img src="logopng.png" alt="Mascota ADEMA" class="mascota" />
+        </div>
+      </section>
+
+      <!-- Pantalla ¿Quiénes Somos? -->
+      <section id="quienes" class="screen">
+        <h2 class="header-bar">¿QUIÉNES SOMOS?</h2>
+        <div class="content-box">
+          <p>¡HOLA! ¡BIENVENIDA/O A ADEMA!</p>
+          <p>
+            Si estás buscando cómo obtener información adicional a ciertos temas
+            que vas a tratar en clase, estás en el lugar indicado. ADEMA es un
+            programa educativo diseñado para ofrecerte una variedad de
+            herramientas y recursos generados a base de inteligencia artificial;
+            éste te ayudará a llevar una vida más organizada y productiva.
+          </p>
+          <p>¡COMIENZA YA!</p>
+          <button class="btn secondary" data-target="inicio">Regresar</button>
+        </div>
+      </section>
+
+      <!-- Pantalla Selección Materias (1) -->
+      <section id="materias" class="screen">
+        <h2 class="header-bar">¿EN QUÉ MATERIA NECESITAS AYUDA?</h2>
+        <div class="grid">
+          <button class="grid-btn" data-target="temas-matematica">
+            MATEMÁTICA
+          </button>
+          <button class="grid-btn" data-target="temas-comunicacion">
+            COMUNICACIÓN
+          </button>
+          <button class="grid-btn" data-target="temas-ciencia">
+            CIENCIA Y TECNOLOGÍA
+          </button>
+          <button class="grid-btn" data-target="temas-sociales">
+            CIENCIAS SOCIALES
+          </button>
+          <button class="grid-btn" data-target="temas-desarrollo">
+            DESARROLLO PERSONAL CIUDADANÍA Y CÍVICA
+          </button>
+          <button class="grid-btn" data-target="temas-religiosa">
+            EDUCACIÓN RELIGIOSA
+          </button>
+          <button class="grid-btn" data-target="temas-razonamiento">
+            RAZONAMIENTO MATEMÁTICO
+          </button>
+          <button class="grid-btn" data-target="temas-ingles">INGLÉS</button>
+        </div>
+        <button class="btn secondary" data-target="otras">
+          Buscar más materias
+        </button>
+      </section>
+
+      <!-- Pantalla Otras Materias -->
+      <section id="otras" class="screen">
+        <h2 class="header-bar">¿EN QUÉ MATERIA NECESITAS AYUDA?</h2>
+        <div class="grid">
+          <button class="grid-btn" data-target="temas-etica-valores">
+            Ética y valores
+          </button>
+          <button class="grid-btn" data-target="temas-arte">
+            Arte y Cultura
+          </button>
+          <button class="grid-btn" data-target="temas-musica">Música</button>
+          <button class="grid-btn" data-target="temas-fisica">
+            Educación Física
+          </button>
+          <button class="grid-btn" data-target="temas-trabajo">
+            Educación para el Trabajo
+          </button>
+        </div>
+        <button class="btn secondary" data-target="materias">Regresar</button>
+      </section>
+
+      <!-- Pantalla Temas de Matemática -->
+      <section id="temas-matematica" class="screen">
+        <h2 class="header-bar">MATEMÁTICA</h2>
+        <div class="grid">
+          <button class="grid-btn" data-target="contenido-algebra">
+            ÁLGEBRA
+          </button>
+          <button class="grid-btn" data-target="contenido-geometria">
+            GEOMETRÍA
+          </button>
+          <button class="grid-btn" data-target="contenido-trigonometria">
+            TRIGONOMETRÍA
+          </button>
+          <button class="grid-btn" data-target="contenido-estadistica">
+            ESTADÍSTICA
+          </button>
+        </div>
+        <button class="btn secondary" data-target="materias">Regresar</button>
+      </section>
+      <!-- Comunicacion-->
+      <section id="temas-comunicacion" class="screen">
+        <h2 class="header-bar">COMUNICACIÓN</h2>
+        <div class="grid">
+          <button class="grid-btn" data-target="contenido-gramatica">
+            Gramática
+          </button>
+          <button class="grid-btn" data-target="contenido-ortografia">
+            Ortografía
+          </button>
+          <button class="grid-btn" data-target="contenido-redaccion">
+            Redacción
+          </button>
+          <button class="grid-btn" data-target="contenido-comprension-lectora">
+            Comprensión de lectura
+          </button>
+          <button class="grid-btn" data-target="contenido-analisis-discurso">
+            Análisis de discurso
+          </button>
+          <button class="grid-btn" data-target="contenido-resumen">
+            Resumen
+          </button>
+        </div>
+        <button class="btn secondary" data-target="materias">Regresar</button>
+      </section>
+
+      <!-- CIENCIA Y TECNOLOGÍA -->
+      <section id="temas-ciencia" class="screen">
+        <h2 class="header-bar">CIENCIA Y TECNOLOGÍA</h2>
+        <div class="grid">
+          <button
+            class="grid-btn"
+            data-target="contenido-investigacion-cientifica"
+          >
+            LA INVESTIGACIÓN CIENTÍFICA
+          </button>
+          <button class="grid-btn" data-target="contenido-caida-libre">
+            CAÍDA LIBRE
+          </button>
+          <button class="grid-btn" data-target="contenido-cinematica">
+            CINEMÁTICA
+          </button>
+          <button class="grid-btn" data-target="contenido-el-atomo">
+            EL ÁTOMO
+          </button>
+          <button class="grid-btn" data-target="contenido-leyes-newton">
+            LAS LEYES DE NEWTON
+          </button>
+          <button class="grid-btn" data-target="contenido-modelos-atomicos">
+            MODELOS ATÓMICOS
+          </button>
+          <button class="grid-btn" data-target="contenido-mru">MRU</button>
+          <button class="grid-btn" data-target="contenido-bioelementos">
+            BIOELEMENTOS
+          </button>
+          <button class="grid-btn" data-target="contenido-aceleracion-mruv">
+            ACELERACIÓN: MRUV
+          </button>
+          <button class="grid-btn" data-target="contenido-niveles-organizacion">
+            NIVELES DE ORGANIZACIÓN DE LOS SERES VIVOS
+          </button>
+        </div>
+        <button class="btn secondary" data-target="materias">Regresar</button>
+      </section>
+
+      <!-- CIENCIAS SOCIALES -->
+      <section id="temas-sociales" class="screen">
+        <h2 class="header-bar">CIENCIAS SOCIALES</h2>
+        <div class="grid">
+          <button class="grid-btn" data-target="contenido-historia">
+            Historia
+          </button>
+          <button class="grid-btn" data-target="contenido-geografia">
+            Geografía
+          </button>
+          <button class="grid-btn" data-target="contenido-economia">
+            Economía
+          </button>
+          <button class="grid-btn" data-target="contenido-sociologia">
+            Sociología
+          </button>
+          <button class="grid-btn" data-target="contenido-antropologia">
+            Antropología
+          </button>
+          <button class="grid-btn" data-target="contenido-politica">
+            Política
+          </button>
+        </div>
+        <button class="btn secondary" data-target="materias">Regresar</button>
+      </section>
+
+      <!-- DESARROLLO PERSONAL CIUDADANÍA Y CÍVICA -->
+      <section id="temas-desarrollo" class="screen">
+        <h2 class="header-bar">DESARROLLO PERSONAL CIUDADANÍA Y CÍVICA</h2>
+        <div class="grid">
+          <button class="grid-btn" data-target="contenido-autoestima">
+            Autoestima
+          </button>
+          <button class="grid-btn" data-target="contenido-empatia">
+            Empatía
+          </button>
+          <button class="grid-btn" data-target="contenido-liderazgo">
+            Liderazgo
+          </button>
+          <button
+            class="grid-btn"
+            data-target="contenido-responsabilidad-ciudadana"
+          >
+            Responsabilidad ciudadana
+          </button>
+          <button
+            class="grid-btn"
+            data-target="contenido-resolucion-conflictos"
+          >
+            Resolución de conflictos
+          </button>
+          <button class="grid-btn" data-target="contenido-etica-valores">
+            Ética y valores
+          </button>
+        </div>
+        <button class="btn secondary" data-target="materias">Regresar</button>
+      </section>
+      <!-- RAZONAMIENTO MATEMÁTICO -->
+      <!-- SECCIÓN DE TEMAS: RAZONAMIENTO MATEMÁTICO -->
+      <section id="temas-razonamiento" class="screen">
+        <h2 class="header-bar">RAZONAMIENTO MATEMÁTICO</h2>
+        <div class="grid">
+          <button class="grid-btn" data-target="contenido-series-numericas">
+            Series numéricas
+          </button>
+          <button class="grid-btn" data-target="contenido-problemas-logicos">
+            Problemas lógicos
+          </button>
+          <button class="grid-btn" data-target="contenido-diagramas-esquemas">
+            Diagramas y esquemas
+          </button>
+          <button
+            class="grid-btn"
+            data-target="contenido-razonamiento-deductivo"
+          >
+            Razonamiento deductivo
+          </button>
+          <button
+            class="grid-btn"
+            data-target="contenido-razonamiento-inductivo"
+          >
+            Razonamiento inductivo
+          </button>
+          <button class="grid-btn" data-target="contenido-patrones-secuencias">
+            Patrones y secuencias
+          </button>
+        </div>
+        <button class="btn secondary" data-target="materias">Regresar</button>
+      </section>
+
+      <!-- INGLÉS -->
+      <section id="temas-ingles" class="screen">
+        <h2 class="header-bar">ENGLISH</h2>
+        <div class="grid">
+          <button class="grid-btn" data-target="contenido-ingles-vocabulario">
+            Vocabulary
+          </button>
+          <button class="grid-btn" data-target="contenido-ingles-gramatica">
+            Grammar
+          </button>
+          <button
+            class="grid-btn"
+            data-target="contenido-ingles-comprension-auditiva"
+          >
+            Listening Comprehension
+          </button>
+          <button
+            class="grid-btn"
+            data-target="contenido-ingles-comprension-lectora"
+          >
+            Reading Comprehension
+          </button>
+          <button class="grid-btn" data-target="contenido-ingles-speaking">
+            Speaking
+          </button>
+          <button class="grid-btn" data-target="contenido-ingles-writing">
+            Writing
+          </button>
+        </div>
+        <button class="btn secondary" data-target="materias">Back</button>
+      </section>
+      <!-- EDUCACIÓN RELIGIOSA -->
+      <section id="temas-religiosa" class="screen">
+        <h2 class="header-bar">EDUCACIÓN RELIGIOSA</h2>
+        <div class="grid">
+          <button class="grid-btn" data-target="contenido-dogmas-creencias">
+            Dogmas y Creencias
+          </button>
+          <button class="grid-btn" data-target="contenido-historia-iglesia">
+            Historia de la Iglesia
+          </button>
+          <button class="grid-btn" data-target="contenido-liturgia">
+            Liturgia
+          </button>
+          <button class="grid-btn" data-target="contenido-etica-cristiana">
+            Ética Cristiana
+          </button>
+          <button class="grid-btn" data-target="contenido-sagradas-escrituras">
+            Sagradas Escrituras
+          </button>
+          <button
+            class="grid-btn"
+            data-target="contenido-festividades-religiosas"
+          >
+            Festividades Religiosas
+          </button>
+        </div>
+        <button class="btn secondary" data-target="otras">Regresar</button>
+      </section>
+
+      <!-- ARTE Y CULTURA -->
+      <section id="temas-arte" class="screen">
+        <h2 class="header-bar">ARTE Y CULTURA</h2>
+        <div class="grid">
+          <button class="grid-btn" data-target="contenido-historia-arte">
+            Historia del arte
+          </button>
+          <button
+            class="grid-btn"
+            data-target="contenido-movimientos-artistico"
+          >
+            Movimientos artísticos
+          </button>
+          <button class="grid-btn" data-target="contenido-patrimonio-cultural">
+            Patrimonio cultural
+          </button>
+          <button class="grid-btn" data-target="contenido-artes-plasticas">
+            Artes plásticas
+          </button>
+          <button class="grid-btn" data-target="contenido-teatro-danza">
+            Teatro y danza
+          </button>
+          <button class="grid-btn" data-target="contenido-arte-contemporaneo">
+            Arte contemporáneo
+          </button>
+        </div>
+        <button class="btn secondary" data-target="otras">Regresar</button>
+      </section>
+      <!-- MÚSICA -->
+      <section id="temas-musica" class="screen">
+        <h2 class="header-bar">MÚSICA</h2>
+        <div class="grid">
+          <button class="grid-btn" data-target="contenido-teoria-musical">
+            Teoría Musical
+          </button>
+          <button class="grid-btn" data-target="contenido-instrumentos">
+            Instrumentos
+          </button>
+          <button class="grid-btn" data-target="contenido-ritmo-metrica">
+            Ritmo y Métrica
+          </button>
+          <button class="grid-btn" data-target="contenido-melodia">
+            Melodía
+          </button>
+          <button class="grid-btn" data-target="contenido-generos-musicales">
+            Géneros Musicales
+          </button>
+          <button class="grid-btn" data-target="contenido-historia-musica">
+            Historia de la Música
+          </button>
+        </div>
+        <button class="btn secondary" data-target="otras">Regresar</button>
+      </section>
+      <!-- EDUCACIÓN FÍSICA -->
+      <section id="temas-fisica" class="screen">
+        <h2 class="header-bar">EDUCACIÓN FÍSICA</h2>
+        <div class="grid">
+          <button class="grid-btn" data-target="contenido-deportes">
+            Deportes
+          </button>
+          <button class="grid-btn" data-target="contenido-nutricion">
+            Nutrición
+          </button>
+          <button class="grid-btn" data-target="contenido-anatomia-basica">
+            Anatomía básica
+          </button>
+          <button class="grid-btn" data-target="contenido-tecnicas-ejercicio">
+            Técnicas de ejercicio
+          </button>
+          <button class="grid-btn" data-target="contenido-salud-bienestar">
+            Salud y bienestar
+          </button>
+          <button class="grid-btn" data-target="contenido-trabajo-equipo">
+            Trabajo en equipo
+          </button>
+        </div>
+        <button class="btn secondary" data-target="otras">Regresar</button>
+      </section>
+
+      <!-- EDUCACIÓN PARA EL TRABAJO -->
+      <section id="temas-trabajo" class="screen">
+        <h2 class="header-bar">EDUCACIÓN PARA EL TRABAJO</h2>
+        <div class="grid">
+          <button class="grid-btn" data-target="contenido-habilidades-tecnicas">
+            Habilidades técnicas
+          </button>
+          <button class="grid-btn" data-target="contenido-emprendimiento">
+            Emprendimiento
+          </button>
+          <button class="grid-btn" data-target="contenido-tic-tecnologia">
+            TIC y tecnología
+          </button>
+          <button class="grid-btn" data-target="contenido-seguridad-higiene">
+            Seguridad e higiene
+          </button>
+          <button
+            class="grid-btn"
+            data-target="contenido-planificacion-laboral"
+          >
+            Planificación laboral
+          </button>
+          <button class="grid-btn" data-target="contenido-trabajo-colaborativo">
+            Trabajo colaborativo
+          </button>
+        </div>
+        <button class="btn secondary" data-target="otras">Regresar</button>
+      </section>
+
+      <!-- SECCIÓN DE SUBTEMAS: ÉTICA Y VALORES -->
+      <section id="temas-etica-valores" class="screen">
+        <h2 class="header-bar">ÉTICA Y VALORES</h2>
+        <div class="grid">
+          <button class="grid-btn" data-target="contenido-honestidad">
+            Honestidad
+          </button>
+          <button class="grid-btn" data-target="contenido-respeto">
+            Respeto
+          </button>
+          <button class="grid-btn" data-target="contenido-justicia">
+            Justicia
+          </button>
+          <button class="grid-btn" data-target="contenido-responsabilidad">
+            Responsabilidad
+          </button>
+          <button class="grid-btn" data-target="contenido-solidaridad">
+            Solidaridad
+          </button>
+        </div>
+        <button class="btn secondary" data-target="temas-desarrollo">
+          Regresar
+        </button>
+      </section>
+      <!--------------------------informacion de cada tema -->
+      <!--MAtematicas info-->
+      <div>
+        <!-- Contenido Álgebra -->
+        <section id="contenido-algebra" class="screen">
+          <h2 class="header-bar">ÁLGEBRA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es el Álgebra?</strong></p>
+            <p>
+              El álgebra es la rama de las matemáticas que utiliza símbolos y
+              letras para representar números y operaciones, permitiendo
+              generalizar patrones y resolver problemas.
+            </p>
+            <p>
+              <strong
+                >Pasos fundamentales en resolución de problemas
+                algebraicos:</strong
+              >
+            </p>
+            <ol>
+              <li>
+                <strong>Formulación del problema:</strong> Definir incógnitas y
+                traducir la situación a expresiones o ecuaciones.
+              </li>
+              <li>
+                <strong>Manipulación de expresiones:</strong> Simplificar,
+                expandir y factorizar términos para trabajar con ellos.
+              </li>
+              <li>
+                <strong>Resolución de ecuaciones:</strong> Aplicar operaciones
+                inversas para despejar la incógnita.
+              </li>
+              <li>
+                <strong>Comprobación:</strong> Sustituir la solución en la
+                ecuación original para verificar su validez.
+              </li>
+              <li>
+                <strong>Interpretación de resultados:</strong> Analizar si la
+                solución tiene sentido en el contexto del problema.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-matematica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Geometría -->
+        <section id="contenido-geometria" class="screen">
+          <h2 class="header-bar">GEOMETRÍA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Geometría?</strong></p>
+            <p>
+              La geometría estudia las propiedades y medidas de las figuras en
+              el plano y el espacio, así como las relaciones entre sus
+              elementos.
+            </p>
+            <p><strong>Fases del estudio geométrico:</strong></p>
+            <ol>
+              <li>
+                <strong>Definición de elementos básicos:</strong> Punto, línea,
+                plano y sus relaciones.
+              </li>
+              <li>
+                <strong>Construcción de figuras:</strong> Triángulos,
+                cuadriláteros, círculos, polígonos.
+              </li>
+              <li>
+                <strong>Teoremas y demostraciones:</strong> Propiedades de
+                congruencia, semejanza y paralelismo.
+              </li>
+              <li>
+                <strong>Cálculo de magnitudes:</strong> Perímetro, área y
+                volumen según la figura.
+              </li>
+              <li>
+                <strong>Aplicación práctica:</strong> Resolución de problemas de
+                medición y diseño.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-matematica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Trigonometría -->
+        <section id="contenido-trigonometria" class="screen">
+          <h2 class="header-bar">TRIGONOMETRÍA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Trigonometría?</strong></p>
+            <p>
+              La trigonometría estudia las relaciones entre los ángulos y los
+              lados de los triángulos, y define las funciones trigonométricas.
+            </p>
+            <p>
+              <strong>Pasos para resolver problemas trigonométricos:</strong>
+            </p>
+            <ol>
+              <li>
+                <strong>Identificación del triángulo:</strong> Determinar si es
+                rectángulo o general.
+              </li>
+              <li>
+                <strong>Selección de función:</strong> Seno, coseno o tangente
+                según los lados implicados.
+              </li>
+              <li>
+                <strong>Uso de identidades:</strong> Aplicar relaciones como
+                pitagóricas o fórmulas de ángulo suma.
+              </li>
+              <li>
+                <strong>Cálculo de ángulos o lados:</strong> Despejar en la
+                función trigonométrica.
+              </li>
+              <li>
+                <strong>Verificación en el contexto:</strong> Comprobar que la
+                solución encaje con las medidas reales.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-matematica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Estadística -->
+        <section id="contenido-estadistica" class="screen">
+          <h2 class="header-bar">ESTADÍSTICA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Estadística?</strong></p>
+            <p>
+              La estadística recolecta, organiza y analiza datos para extraer
+              conclusiones y tomar decisiones informadas.
+            </p>
+            <p><strong>Etapas del proceso estadístico:</strong></p>
+            <ol>
+              <li>
+                <strong>Recolección de datos:</strong> Diseñar encuestas o
+                experimentos.
+              </li>
+              <li>
+                <strong>Organización:</strong> Tablas de frecuencia y
+                representaciones gráficas.
+              </li>
+              <li>
+                <strong>Medidas de tendencia central:</strong> Cálculo de media,
+                mediana y moda.
+              </li>
+              <li>
+                <strong>Medidas de dispersión:</strong> Rango, desviación media
+                y desviación estándar.
+              </li>
+              <li>
+                <strong>Interpretación:</strong> Analizar resultados y extraer
+                conclusiones.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-matematica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+      </div>
+      <!---AQUI COMUNICACION-->
+      <div>
+        <!-- Contenido Gramática -->
+        <section id="contenido-gramatica" class="screen">
+          <h2 class="header-bar">GRAMÁTICA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Gramática?</strong></p>
+            <p>
+              La gramática es el conjunto de reglas y normas que regulan el uso
+              correcto de un idioma, permitiendo construir oraciones coherentes.
+            </p>
+            <p><strong>Elementos esenciales:</strong></p>
+            <ol>
+              <li>
+                <strong>Partes de la oración:</strong> Sujeto, predicado y
+                complementos.
+              </li>
+              <li>
+                <strong>Categorías gramaticales:</strong> Sustantivos, verbos,
+                adjetivos, adverbios, etc.
+              </li>
+              <li>
+                <strong>Concordancia:</strong> Coincidencia de género y número.
+              </li>
+              <li>
+                <strong>Tiempos y modos verbales:</strong> Indicativo,
+                subjuntivo e imperativo.
+              </li>
+              <li>
+                <strong>Oraciones compuestas:</strong> Coordinadas y
+                subordinadas.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-comunicacion">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Ortografía -->
+        <section id="contenido-ortografia" class="screen">
+          <h2 class="header-bar">ORTOGRAFÍA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Ortografía?</strong></p>
+            <p>
+              La ortografía es el conjunto de normas que regulan la correcta
+              escritura de un idioma: uso de letras, acentos y signos de
+              puntuación.
+            </p>
+            <p><strong>Reglas fundamentales:</strong></p>
+            <ol>
+              <li>
+                <strong>Uso de mayúsculas:</strong> Al inicio de oraciones,
+                nombres propios, títulos.
+              </li>
+              <li>
+                <strong>Acentuación:</strong> Palabras agudas, graves y
+                esdrújulas.
+              </li>
+              <li>
+                <strong>Uso de b y v:</strong> Palabras que comienzan con “bi-”,
+                “vul-”, etc.
+              </li>
+              <li>
+                <strong>Uso de c, s y z:</strong> Prefijos “trans-”,
+                terminaciones “-anza”, “-ez”.
+              </li>
+              <li>
+                <strong>Puntuación:</strong> Comas, puntos, puntos suspensivos y
+                signos de interrogación/exclamación.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-comunicacion">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Redacción -->
+        <section id="contenido-redaccion" class="screen">
+          <h2 class="header-bar">REDACCIÓN</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Redacción?</strong></p>
+            <p>
+              La redacción es el proceso de elaborar y organizar ideas por
+              escrito de forma clara, coherente y estructurada.
+            </p>
+            <p><strong>Pasos para redactar un texto:</strong></p>
+            <ol>
+              <li>
+                <strong>Planificación:</strong> Definir objetivo y público.
+              </li>
+              <li>
+                <strong>Esquema:</strong> Organizar ideas en introducción,
+                desarrollo y conclusión.
+              </li>
+              <li>
+                <strong>Redacción:</strong> Escribir párrafos con ideas claras y
+                conectores.
+              </li>
+              <li>
+                <strong>Revisión:</strong> Corregir estilo, coherencia y
+                ortografía.
+              </li>
+              <li>
+                <strong>Edición final:</strong> Ajustar formato y pulir
+                detalles.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-comunicacion">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Comprensión de Lectura -->
+        <section id="contenido-comprension-lectora" class="screen">
+          <h2 class="header-bar">COMPRENSIÓN DE LECTURA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Comprensión de Lectura?</strong></p>
+            <p>
+              Es la habilidad de interpretar y extraer significado de un texto,
+              identificando ideas explícitas e implícitas.
+            </p>
+            <p><strong>Estrategias clave:</strong></p>
+            <ol>
+              <li><strong>Lectura global:</strong> Obtener idea principal.</li>
+              <li>
+                <strong>Identificación de detalles:</strong> Buscar datos
+                específicos.
+              </li>
+              <li>
+                <strong>Inferencias:</strong> Deducir información no explícita.
+              </li>
+              <li>
+                <strong>Resúmenes:</strong> Sintetizar con tus propias palabras.
+              </li>
+              <li>
+                <strong>Preguntas de reflexión:</strong> Relacionar con
+                conocimientos previos.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-comunicacion">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Análisis de Discurso -->
+        <section id="contenido-analisis-discurso" class="screen">
+          <h2 class="header-bar">ANÁLISIS DE DISCURSO</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es el Análisis de Discurso?</strong></p>
+            <p>
+              Es el estudio de la estructura, la función y el contexto de los
+              textos orales o escritos para entender su propósito comunicativo.
+            </p>
+            <p><strong>Fases del análisis:</strong></p>
+            <ol>
+              <li>
+                <strong>Contextualización:</strong> Identificar emisor, receptor
+                y propósito.
+              </li>
+              <li>
+                <strong>Estructura:</strong> Analizar introducción, desarrollo y
+                cierre.
+              </li>
+              <li>
+                <strong>Recursos lingüísticos:</strong> Uso de énfasis,
+                metáforas y registro.
+              </li>
+              <li>
+                <strong>Coherencia y cohesión:</strong> Conectores y
+                organización lógica.
+              </li>
+              <li>
+                <strong>Interpretación crítica:</strong> Evaluar objetivos y
+                efectos en el receptor.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-comunicacion">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Resumen -->
+        <section id="contenido-resumen" class="screen">
+          <h2 class="header-bar">RESUMEN</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es un Resumen?</strong></p>
+            <p>
+              El resumen es la reducción de un texto a sus ideas más
+              importantes, expresadas con tus propias palabras.
+            </p>
+            <p><strong>Pasos para elaborar un resumen:</strong></p>
+            <ol>
+              <li>
+                <strong>Lectura atenta:</strong> Identificar ideas principales.
+              </li>
+              <li><strong>Selección:</strong> Escoger información esencial.</li>
+              <li>
+                <strong>Redacción:</strong> Reescribir de forma breve y clara.
+              </li>
+              <li>
+                <strong>Revisión:</strong> Asegurar fidelidad al texto original.
+              </li>
+              <li><strong>Edición:</strong> Ajustar coherencia y estilo.</li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-comunicacion">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- TERMINA COMUNICACION-->
+      </div>
+
+      <!--Ciencia y tecnologia-->
+      <div>
+        <!-- COMIENZA CIENCIA Y TECNOLOGIA-->
+        <!-- Contenido La Investigación Científica -->
+        <section id="contenido-investigacion-cientifica" class="screen">
+          <h2 class="header-bar">LA INVESTIGACIÓN CIENTÍFICA</h2>
+          <div class="content-box">
+            <p>
+              <strong>Etapas del proceso de investigación científica:</strong>
+            </p>
+            <ol>
+              <li>
+                <strong>Planteamiento del problema.</strong> Identificar y
+                formular claramente el fenómeno a estudiar (delimitación
+                temporal, espacial y conceptual).
+              </li>
+              <li>
+                <strong>Revisión de la literatura.</strong> Analizar
+                investigaciones previas para conocer el estado del arte y evitar
+                duplicaciones.
+              </li>
+              <li>
+                <strong>Formulación de hipótesis.</strong> Proponer
+                explicaciones o respuestas provisionales al problema.
+              </li>
+              <li>
+                <strong>Diseño metodológico.</strong> Definir tipo de estudio,
+                técnicas de recolección y muestra.
+              </li>
+              <li>
+                <strong>Recolección de datos.</strong> Aplicar encuestas,
+                experimentos u observaciones según lo planificado.
+              </li>
+              <li>
+                <strong>Análisis de datos.</strong> Procesar la información con
+                herramientas estadísticas o cualitativas.
+              </li>
+              <li>
+                <strong>Interpretación y conclusiones.</strong> Relacionar
+                resultados con la hipótesis y el marco teórico.
+              </li>
+              <li>
+                <strong>Divulgación.</strong> Presentar el informe o artículo
+                científico.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ciencia">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Caída Libre -->
+        <section id="contenido-caida-libre" class="screen">
+          <h2 class="header-bar">CAÍDA LIBRE</h2>
+          <div class="content-box">
+            <p>
+              <strong>¿Qué es la caída libre?</strong> Movimiento de un objeto
+              bajo la única acción de la gravedad (sin resistencia del aire).
+            </p>
+            <p><strong>Ecuaciones fundamentales:</strong></p>
+            <ol>
+              <li>
+                <strong>Posición:</strong> \(y = y_0 + v_{0y}\,t -
+                \tfrac12gt^2\)
+              </li>
+              <li><strong>Velocidad:</strong> \(v_y = v_{0y} - g\,t\)</li>
+              <li>
+                <strong>Aceleración:</strong> constante \(a = -g \approx
+                -9{,}8\,\mathrm{m/s^2}\)
+              </li>
+            </ol>
+            <p>
+              <strong>Supuestos:</strong> Sin rozamiento ni fuerzas adicionales.
+            </p>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ciencia">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Cinemática -->
+        <section id="contenido-cinematica" class="screen">
+          <h2 class="header-bar">CINEMÁTICA</h2>
+          <div class="content-box">
+            <p>
+              <strong>¿Qué estudia la cinemática?</strong> El movimiento de los
+              cuerpos sin considerar las causas (fuerzas).
+            </p>
+            <p>
+              <strong>Variables clave:</strong> posición \(x(t)\), velocidad
+              \(v(t)\), aceleración \(a(t)\).
+            </p>
+            <p><strong>Clases de movimiento:</strong></p>
+            <ul>
+              <li>
+                <strong>MRU:</strong> \(x = x_0 + v\,t\) (velocidad constante).
+              </li>
+              <li>
+                <strong>MRUV:</strong> \(x = x_0 + v_0t + \tfrac12at^2\)
+                (aceleración constante).
+              </li>
+              <li>
+                <strong>Movimiento circular:</strong> velocidad angular y
+                centrípeta.
+              </li>
+            </ul>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ciencia">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido El Átomo -->
+        <section id="contenido-el-atomo" class="screen">
+          <h2 class="header-bar">EL ÁTOMO</h2>
+          <div class="content-box">
+            <p>
+              <strong>Definición:</strong> La unidad básica de la materia,
+              formada por un núcleo (protones y neutrones) y electrones
+              alrededor.
+            </p>
+            <p><strong>Características principales:</strong></p>
+            <ol>
+              <li>
+                <strong>Carga:</strong> Protones (+), electrones (–), neutrones
+                (0).
+              </li>
+              <li>
+                <strong>Configuración electrónica:</strong> Distribución de
+                electrones en niveles de energía.
+              </li>
+              <li>
+                <strong>Isótopos:</strong> Mismo número atómico, distinto número
+                másico.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ciencia">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Las Leyes de Newton -->
+        <section id="contenido-leyes-newton" class="screen">
+          <h2 class="header-bar">LAS LEYES DE NEWTON</h2>
+          <div class="content-box">
+            <p>
+              <strong>Primera Ley (Inercia):</strong> Un cuerpo mantiene su
+              estado de reposo o movimiento rectilíneo uniforme a menos que una
+              fuerza neta actúe sobre él.
+            </p>
+            <p>
+              <strong>Segunda Ley (F = ma):</strong> La aceleración de un objeto
+              es proporcional a la fuerza neta e inversamente proporcional a su
+              masa.
+            </p>
+            <p>
+              <strong>Tercera Ley (Acción y reacción):</strong> A toda fuerza de
+              acción le corresponde una fuerza de reacción igual y opuesta.
+            </p>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ciencia">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Modelos Atómicos -->
+        <section id="contenido-modelos-atomicos" class="screen">
+          <h2 class="header-bar">MODELOS ATÓMICOS</h2>
+          <div class="content-box">
+            <p><strong>Principales modelos:</strong></p>
+            <ol>
+              <li>
+                <strong>Thomson (1904):</strong> “Budín de pasas” con electrones
+                incrustados.
+              </li>
+              <li>
+                <strong>Rutherford (1911):</strong> Núcleo pequeño y denso,
+                electrones orbitando.
+              </li>
+              <li>
+                <strong>Bohr (1913):</strong> Órbitas cuantizadas, salto entre
+                niveles.
+              </li>
+              <li>
+                <strong>Modelo cuántico:</strong> Nubes de probabilidad
+                electrónicas.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ciencia">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido MRU -->
+        <section id="contenido-mru" class="screen">
+          <h2 class="header-bar">MRU (MOVIMIENTO RECTILÍNEO UNIFORME)</h2>
+          <div class="content-box">
+            <p>
+              <strong>Definición:</strong> Movimiento con velocidad constante en
+              línea recta.
+            </p>
+            <p><strong>Ecuación característica:</strong> \(x = x_0 + v\,t\)</p>
+            <p><strong>Características:</strong></p>
+            <ul>
+              <li>Velocidad constante (\(a=0\)).</li>
+              <li>Trayectoria recta.</li>
+              <li>Gráfica posición-tiempo: línea recta.</li>
+            </ul>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ciencia">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Bioelementos -->
+        <section id="contenido-bioelementos" class="screen">
+          <h2 class="header-bar">BIOELEMENTOS</h2>
+          <div class="content-box">
+            <p>
+              <strong>Definición:</strong> Elementos químicos esenciales para la
+              vida.
+            </p>
+            <p><strong>Clasificación:</strong></p>
+            <ol>
+              <li>
+                <strong>Primarios (CHON):</strong> Carbono, Hidrógeno, Oxígeno,
+                Nitrógeno.
+              </li>
+              <li>
+                <strong>Secundarios:</strong> Calcio, Fósforo, Azufre, Potasio,
+                Sodio.
+              </li>
+              <li>
+                <strong>Oligoelementos:</strong> Hierro, Zinc, Cobre, Yodo,
+                entre otros.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ciencia">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Aceleración: MRUV -->
+        <section id="contenido-aceleracion-mruv" class="screen">
+          <h2 class="header-bar">ACELERACIÓN: MRUV</h2>
+          <div class="content-box">
+            <p>
+              <strong>Movimiento con aceleración uniforme:</strong> velocidad
+              cambia de forma constante.
+            </p>
+            <p><strong>Ecuaciones clave:</strong></p>
+            <ol>
+              <li>\(v = v_0 + a\,t\)</li>
+              <li>\(x = x_0 + v_0t + \tfrac12a t^2\)</li>
+              <li>\(v^2 = v_0^2 + 2a\,\Delta x\)</li>
+            </ol>
+            <p>
+              <strong>Significado:</strong> \(a>0\) acelera; \(a<0\) frena (MRUV
+              retardado).
+            </p>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ciencia">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Niveles de Organización de los Seres Vivos -->
+        <section id="contenido-niveles-organizacion" class="screen">
+          <h2 class="header-bar">NIVELES DE ORGANIZACIÓN DE LOS SERES VIVOS</h2>
+          <div class="content-box">
+            <p><strong>Jerarquía biológica:</strong></p>
+            <ol>
+              <li><strong>Célula:</strong> unidad estructural y funcional.</li>
+              <li><strong>Tejido:</strong> conjunto de células similares.</li>
+              <li>
+                <strong>Órgano:</strong> varias funciones, formado por tejidos.
+              </li>
+              <li>
+                <strong>Sistema u aparato:</strong> conjunto de órganos
+                relacionados.
+              </li>
+              <li><strong>Organismo:</strong> ser vivo individual.</li>
+              <li>
+                <strong>Población:</strong> conjunto de organismos de la misma
+                especie.
+              </li>
+              <li>
+                <strong>Comunidad/ecosistema:</strong> interacciones bióticas y
+                abióticas.
+              </li>
+              <li>
+                <strong>Biosfera:</strong> conjunto de todos los ecosistemas de
+                la Tierra.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ciencia">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- AQUI TERMINA CIENCIA Y TECNOLOGIA-->
+      </div>
+
+      <!--Aqui ciencia sociales-->
+      <div>
+        <!-- Aqui comienza ciencia sociales-->
+        <!-- CONTENIDO Historia -->
+        <section id="contenido-historia" class="screen">
+          <h2 class="header-bar">HISTORIA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Historia?</strong></p>
+            <p>
+              La historia es la disciplina que estudia los hechos pasados de la
+              humanidad, analizando causas, procesos y consecuencias.
+            </p>
+            <p><strong>Pasos clave en el estudio histórico:</strong></p>
+            <ol>
+              <li>
+                <strong>Selección del tema:</strong> Definir periodo, lugar y
+                fenómeno a investigar.
+              </li>
+              <li>
+                <strong>Fuentes:</strong> Recolectar documentos, testimonios y
+                artefactos.
+              </li>
+              <li>
+                <strong>Análisis crítico:</strong> Contrastar versiones y
+                verificar fiabilidad.
+              </li>
+              <li>
+                <strong>Contextualización:</strong> Ubicar el hecho en marco
+                político, social y cultural.
+              </li>
+              <li>
+                <strong>Narración y síntesis:</strong> Redactar una
+                interpretación ordenada de los hechos.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-sociales">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- CONTENIDO Geografía -->
+        <section id="contenido-geografia" class="screen">
+          <h2 class="header-bar">GEOGRAFÍA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Geografía?</strong></p>
+            <p>
+              La geografía estudia la organización del espacio terrestre,
+              combinando aspectos físicos y humanos.
+            </p>
+            <p><strong>Áreas principales:</strong></p>
+            <ol>
+              <li>
+                <strong>Geografía física:</strong> relieve, clima, hidrografía,
+                suelos.
+              </li>
+              <li>
+                <strong>Geografía humana:</strong> población, urbanismo,
+                economía.
+              </li>
+              <li>
+                <strong>Sistemas de coordenadas:</strong> latitud, longitud y
+                mapas.
+              </li>
+              <li>
+                <strong>Regiones naturales y culturales:</strong> biomas y
+                territorios humanos.
+              </li>
+              <li>
+                <strong>Cartografía:</strong> representación gráfica del
+                espacio.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-sociales">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- CONTENIDO Economía -->
+        <section id="contenido-economia" class="screen">
+          <h2 class="header-bar">ECONOMÍA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Economía?</strong></p>
+            <p>
+              La economía analiza la producción, distribución y consumo de
+              bienes y servicios, y cómo se gestionan los recursos escasos.
+            </p>
+            <p><strong>Conceptos fundamentales:</strong></p>
+            <ol>
+              <li>
+                <strong>Microeconomía:</strong> comportamiento de consumidores y
+                empresas.
+              </li>
+              <li>
+                <strong>Macroeconomía:</strong> indicadores globales, inflación
+                y PIB.
+              </li>
+              <li><strong>Oferta y demanda:</strong> formación de precios.</li>
+              <li>
+                <strong>Sistemas económicos:</strong> mercado, planificado y
+                mixto.
+              </li>
+              <li>
+                <strong>Políticas económicas:</strong> fiscal y monetaria.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-sociales">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- CONTENIDO Sociología -->
+        <section id="contenido-sociologia" class="screen">
+          <h2 class="header-bar">SOCIOLOGÍA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Sociología?</strong></p>
+            <p>
+              La sociología estudia las estructuras sociales, las interacciones
+              humanas y los procesos que configuran la sociedad.
+            </p>
+            <p><strong>Fases del análisis sociológico:</strong></p>
+            <ol>
+              <li>
+                <strong>Definición del objeto de estudio:</strong> grupos,
+                instituciones o fenómenos sociales.
+              </li>
+              <li>
+                <strong>Recolección de datos:</strong> encuestas, entrevistas y
+                observación participante.
+              </li>
+              <li>
+                <strong>Análisis de patrones:</strong> normas, roles y
+                relaciones de poder.
+              </li>
+              <li>
+                <strong>Teorización:</strong> construcción de modelos
+                explicativos.
+              </li>
+              <li>
+                <strong>Aplicación:</strong> propuestas de cambio social o
+                políticas públicas.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-sociales">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- CONTENIDO Antropología -->
+        <section id="contenido-antropologia" class="screen">
+          <h2 class="header-bar">ANTROPOLOGÍA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Antropología?</strong></p>
+            <p>
+              La antropología estudia al ser humano en sus dimensiones
+              biológica, cultural, lingüística y social a lo largo del tiempo.
+            </p>
+            <p><strong>Ramas principales:</strong></p>
+            <ol>
+              <li>
+                <strong>Antropología cultural:</strong> costumbres, creencias y
+                organización social.
+              </li>
+              <li>
+                <strong>Antropología física:</strong> evolución humana y
+                variaciones biológicas.
+              </li>
+              <li>
+                <strong>Antropología lingüística:</strong> relación entre
+                lenguaje y cultura.
+              </li>
+              <li>
+                <strong>Arqueología:</strong> estudio de sociedades pasadas a
+                través de sus restos.
+              </li>
+              <li>
+                <strong>Antropología aplicada:</strong> intervención en
+                problemáticas actuales.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-sociales">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- CONTENIDO Política -->
+        <section id="contenido-politica" class="screen">
+          <h2 class="header-bar">POLÍTICA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Política?</strong></p>
+            <p>
+              La política estudia la organización del poder, los sistemas de
+              gobierno y las relaciones entre gobernantes y gobernados.
+            </p>
+            <p><strong>Aspectos clave:</strong></p>
+            <ol>
+              <li>
+                <strong>Sistemas de gobierno:</strong> democracia,
+                autoritarismo, monarquía.
+              </li>
+              <li>
+                <strong>Instituciones políticas:</strong> parlamento, ejecutivo,
+                judicial.
+              </li>
+              <li>
+                <strong>Derechos y deberes:</strong> ciudadanía y participación.
+              </li>
+              <li>
+                <strong>Partidos y movimientos:</strong> ideologías y campañas.
+              </li>
+              <li>
+                <strong>Política pública:</strong> diseño e implementación de
+                políticas.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-sociales">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+        <!-- Aqui termina ciencia sociales-->
+      </div>
+
+      <!--DESARROLLO PERSONAL CIUDADANÍA Y CÍVICA-->
+      <div>
+        <!-- Contenido Autoestima -->
+        <section id="contenido-autoestima" class="screen">
+          <h2 class="header-bar">AUTOESTIMA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Autoestima?</strong></p>
+            <p>
+              La autoestima es la valoración positiva que una persona tiene de
+              sí misma, basada en el reconocimiento de sus fortalezas y
+              limitaciones.
+            </p>
+            <p><strong>Componentes de la autoestima:</strong></p>
+            <ol>
+              <li>
+                <strong>Autoimagen:</strong> Cómo percibes tu apariencia y
+                habilidades.
+              </li>
+              <li>
+                <strong>Autoaceptación:</strong> Aceptar tus virtudes y defectos
+                sin juicio excesivo.
+              </li>
+              <li>
+                <strong>Autoconfianza:</strong> Creencia en tu capacidad para
+                afrontar retos.
+              </li>
+              <li>
+                <strong>Autorrespeto:</strong> Tratarte con dignidad y
+                consideración.
+              </li>
+              <li>
+                <strong>Autonomía:</strong> Tomar decisiones y asumir sus
+                consecuencias.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-desarrollo">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Empatía -->
+        <section id="contenido-empatia" class="screen">
+          <h2 class="header-bar">EMPATÍA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Empatía?</strong></p>
+            <p>
+              La empatía es la capacidad de entender y compartir las emociones
+              de otras personas, poniéndote en su lugar.
+            </p>
+            <p><strong>Claves para desarrollarla:</strong></p>
+            <ol>
+              <li>
+                <strong>Escucha activa:</strong> Prestar atención sin
+                interrumpir.
+              </li>
+              <li>
+                <strong>Reconocimiento emocional:</strong> Identificar cómo se
+                siente el otro.
+              </li>
+              <li>
+                <strong>Perspectiva:</strong> Imaginar la situación desde su
+                punto de vista.
+              </li>
+              <li>
+                <strong>Comunicación afectiva:</strong> Responder con
+                comprensión y apoyo.
+              </li>
+              <li>
+                <strong>Compasión:</strong> Actitud de ayuda y cuidado hacia los
+                demás.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-desarrollo">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Liderazgo -->
+        <section id="contenido-liderazgo" class="screen">
+          <h2 class="header-bar">LIDERAZGO</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es el Liderazgo?</strong></p>
+            <p>
+              El liderazgo es la habilidad de influir, guiar y motivar a un
+              grupo para alcanzar objetivos comunes.
+            </p>
+            <p><strong>Principales características:</strong></p>
+            <ol>
+              <li>
+                <strong>Visión:</strong> Tener claridad sobre metas a largo
+                plazo.
+              </li>
+              <li>
+                <strong>Comunicación:</strong> Transmitir ideas de forma
+                efectiva.
+              </li>
+              <li>
+                <strong>Empoderamiento:</strong> Fomentar la participación de
+                los demás.
+              </li>
+              <li>
+                <strong>Decisión:</strong> Tomar acciones oportunas y
+                responsables.
+              </li>
+              <li>
+                <strong>Integridad:</strong> Actuar con ética y coherencia.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-desarrollo">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Responsabilidad Ciudadana -->
+        <section id="contenido-responsabilidad-ciudadana" class="screen">
+          <h2 class="header-bar">RESPONSABILIDAD CIUDADANA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Responsabilidad Ciudadana?</strong></p>
+            <p>
+              Es el compromiso de participar activamente en la comunidad,
+              respetar las normas y contribuir al bienestar común.
+            </p>
+            <p><strong>Aspectos clave:</strong></p>
+            <ol>
+              <li>
+                <strong>Participación:</strong> Involucrarse en decisiones y
+                actividades colectivas.
+              </li>
+              <li>
+                <strong>Respeto:</strong> Valorar la diversidad y los derechos
+                de otros.
+              </li>
+              <li>
+                <strong>Cumplimiento:</strong> Respetar leyes y normativas.
+              </li>
+              <li>
+                <strong>Solidaridad:</strong> Ayudar a quienes lo necesitan.
+              </li>
+              <li>
+                <strong>Defensa de derechos:</strong> Promover la justicia y
+                equidad.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-desarrollo">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Resolución de Conflictos -->
+        <section id="contenido-resolucion-conflictos" class="screen">
+          <h2 class="header-bar">RESOLUCIÓN DE CONFLICTOS</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Resolución de Conflictos?</strong></p>
+            <p>
+              Es el proceso de gestionar y solucionar desacuerdos de manera
+              pacífica y constructiva.
+            </p>
+            <p><strong>Fases del proceso:</strong></p>
+            <ol>
+              <li>
+                <strong>Identificación:</strong> Reconocer las causas y las
+                partes involucradas.
+              </li>
+              <li>
+                <strong>Comunicación:</strong> Expresar necesidades y
+                preocupaciones.
+              </li>
+              <li>
+                <strong>Generación de opciones:</strong> Proponer posibles
+                soluciones.
+              </li>
+              <li>
+                <strong>Negociación:</strong> Llegar a un acuerdo mutuamente
+                aceptable.
+              </li>
+              <li>
+                <strong>Seguimiento:</strong> Verificar el cumplimiento del
+                acuerdo.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-desarrollo">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Ética y Valores -->
+        <section id="contenido-etica-valores" class="screen">
+          <h2 class="header-bar">ÉTICA Y VALORES</h2>
+          <div class="content-box">
+            <p><strong>¿Qué son la Ética y los Valores?</strong></p>
+            <p>
+              La ética estudia los principios morales que guían nuestro
+              comportamiento, mientras que los valores son creencias que
+              orientan nuestras acciones.
+            </p>
+            <p><strong>Valores fundamentales:</strong></p>
+            <ol>
+              <li>
+                <strong>Honestidad:</strong> Veracidad en el actuar y comunicar.
+              </li>
+              <li>
+                <strong>Respeto:</strong> Consideración y tolerancia hacia
+                otros.
+              </li>
+              <li>
+                <strong>Justicia:</strong> Trato equitativo y derechos iguales.
+              </li>
+              <li>
+                <strong>Responsabilidad:</strong> Cumplir compromisos y deberes.
+              </li>
+              <li><strong>Solidaridad:</strong> Ayuda y apoyo mutuo.</li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-desarrollo">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <!--Educacion religiosa-->
+      <div>
+        <!-- Contenido Dogmas y Creencias -->
+        <section id="contenido-dogmas-creencias" class="screen">
+          <h2 class="header-bar">DOGMAS Y CREENCIAS</h2>
+          <div class="content-box">
+            <p><strong>¿Qué son los dogmas?</strong></p>
+            <p>
+              Los dogmas son verdades de fe definidas solemnemente por la
+              Iglesia, que todo creyente debe aceptar.
+            </p>
+            <p><strong>Principales dogmas cristianos:</strong></p>
+            <ol>
+              <li>
+                <strong>Trinidad:</strong> Un solo Dios en tres Personas: Padre,
+                Hijo y Espíritu Santo.
+              </li>
+              <li>
+                <strong>Encarnación:</strong> Dios se hizo Hombre en la persona
+                de Jesús.
+              </li>
+              <li>
+                <strong>Redención:</strong> Muerte y Resurrección de Cristo para
+                salvar a la humanidad.
+              </li>
+              <li>
+                <strong>Inmaculada Concepción:</strong> María preservada del
+                pecado original.
+              </li>
+              <li>
+                <strong>Asunción:</strong> María elevada al cielo en cuerpo y
+                alma.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-religiosa">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Historia de la Iglesia -->
+        <section id="contenido-historia-iglesia" class="screen">
+          <h2 class="header-bar">HISTORIA DE LA IGLESIA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué estudia la Historia de la Iglesia?</strong></p>
+            <p>
+              Analiza el desarrollo del cristianismo desde sus orígenes hasta la
+              actualidad.
+            </p>
+            <p><strong>Periodos fundamentales:</strong></p>
+            <ol>
+              <li>
+                <strong>Primera Iglesia (siglos I–V):</strong> persecuciones y
+                consolidación.
+              </li>
+              <li>
+                <strong>Edad Media:</strong> cristianización de Europa y cisma
+                de Oriente.
+              </li>
+              <li>
+                <strong>Reforma y Contrarreforma:</strong> Lutero, Calvino y
+                Concilio de Trento.
+              </li>
+              <li>
+                <strong>Modernidad:</strong> Ilustración, misiones y grandes
+                concilios.
+              </li>
+              <li>
+                <strong>Siglo XX–XXI:</strong> Vaticano II y nuevo anuncio del
+                Evangelio.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-religiosa">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Liturgia -->
+        <section id="contenido-liturgia" class="screen">
+          <h2 class="header-bar">LITURGIA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Liturgia?</strong></p>
+            <p>
+              La liturgia es la celebración pública y oficial de la Iglesia,
+              especialmente la Eucaristía.
+            </p>
+            <p><strong>Elementos de la liturgia:</strong></p>
+            <ol>
+              <li>
+                <strong>Ritos de iniciación:</strong> Bautismo, Confirmación y
+                Eucaristía.
+              </li>
+              <li>
+                <strong>Oficio Divino:</strong> Horas canónicas oradas por
+                clérigos y laicos.
+              </li>
+              <li>
+                <strong>Calendario litúrgico:</strong> Adviento, Navidad,
+                Cuaresma, Pascua y Tiempo Ordinario.
+              </li>
+              <li>
+                <strong>Textos sagrados:</strong> Lecturas bíblicas y oraciones
+                prescritas.
+              </li>
+              <li>
+                <strong>Sacramentales:</strong> Bendiciones y ritos de
+                consagración.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-religiosa">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Ética Cristiana -->
+        <section id="contenido-etica-cristiana" class="screen">
+          <h2 class="header-bar">ÉTICA CRISTIANA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Ética Cristiana?</strong></p>
+            <p>
+              La ética cristiana se basa en el Evangelio y los mandamientos para
+              orientar la conducta.
+            </p>
+            <p><strong>Valores esenciales:</strong></p>
+            <ol>
+              <li>
+                <strong>Amor:</strong> Amar a Dios y al prójimo como a uno
+                mismo.
+              </li>
+              <li>
+                <strong>Caridad:</strong> Servicio desinteresado a los más
+                necesitados.
+              </li>
+              <li><strong>Perdón:</strong> Reconciliación y misericordia.</li>
+              <li>
+                <strong>Justicia:</strong> Defender la dignidad humana y los
+                derechos de todos.
+              </li>
+              <li>
+                <strong>Verdad:</strong> Honestidad y coherencia con la propia
+                fe.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-religiosa">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Sagradas Escrituras -->
+        <section id="contenido-sagradas-escrituras" class="screen">
+          <h2 class="header-bar">SAGRADAS ESCRITURAS</h2>
+          <div class="content-box">
+            <p><strong>¿Qué son las Sagradas Escrituras?</strong></p>
+            <p>
+              La Biblia es la colección de libros inspirados que revelan la
+              historia de la salvación.
+            </p>
+            <p><strong>Partes de la Biblia:</strong></p>
+            <ol>
+              <li>
+                <strong>Antiguo Testamento:</strong> Ley, Profetas y Escritos.
+              </li>
+              <li>
+                <strong>Nuevo Testamento:</strong> Evangelios, Hechos, Cartas y
+                Apocalipsis.
+              </li>
+              <li>
+                <strong>Canon:</strong> Lista oficial de libros reconocidos.
+              </li>
+              <li>
+                <strong>Exégesis:</strong> Interpretación crítica del texto.
+              </li>
+              <li>
+                <strong>Lectio Divina:</strong> Oración meditativa de la
+                Escritura.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-religiosa">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Festividades Religiosas -->
+        <section id="contenido-festividades-religiosas" class="screen">
+          <h2 class="header-bar">FESTIVIDADES RELIGIOSAS</h2>
+          <div class="content-box">
+            <p><strong>¿Qué son las festividades religiosas?</strong></p>
+            <p>
+              Celebraciones que conmemoran eventos centrales de la fe cristiana.
+            </p>
+            <p><strong>Principales fiestas:</strong></p>
+            <ol>
+              <li>
+                <strong>Adviento y Navidad:</strong> Preparación y nacimiento de
+                Jesús.
+              </li>
+              <li>
+                <strong>Cuaresma y Semana Santa:</strong> Pasión, Muerte y
+                Resurrección.
+              </li>
+              <li><strong>Pascua:</strong> Fiesta de la Resurrección.</li>
+              <li><strong>Pentecostés:</strong> Venida del Espíritu Santo.</li>
+              <li>
+                <strong>Corpus Christi:</strong> Celebración de la Eucaristía.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-religiosa">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <!-- Razonamiento matematicos-->
+      <div>
+        <!-- Contenido Series Numéricas -->
+        <section id="contenido-series-numericas" class="screen">
+          <h2 class="header-bar">SERIES NUMÉRICAS</h2>
+          <div class="content-box">
+            <p><strong>¿Qué son las Series Numéricas?</strong></p>
+            <p>
+              Secuencias de números ordenados siguiendo un patrón determinado.
+            </p>
+            <p><strong>Tipos comunes:</strong></p>
+            <ol>
+              <li>
+                <strong>Aritméticas:</strong> diferencia constante entre
+                términos.
+              </li>
+              <li>
+                <strong>Geométricas:</strong> razón constante entre términos.
+              </li>
+              <li>
+                <strong>Fibonacci:</strong> cada término suma de los dos
+                anteriores.
+              </li>
+              <li>
+                <strong>Alternantes:</strong> signos o patrones que se repiten.
+              </li>
+              <li>
+                <strong>Recurrencia:</strong> definidos por una fórmula entre
+                términos.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-razonamiento">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Problemas Lógicos -->
+        <section id="contenido-problemas-logicos" class="screen">
+          <h2 class="header-bar">PROBLEMAS LÓGICOS</h2>
+          <div class="content-box">
+            <p><strong>¿Qué son los Problemas Lógicos?</strong></p>
+            <p>
+              Enigmas que requieren aplicar razonamiento para hallar la
+              solución.
+            </p>
+            <p><strong>Estrategias:</strong></p>
+            <ol>
+              <li>
+                <strong>Analizar el enunciado:</strong> identificar datos clave.
+              </li>
+              <li>
+                <strong>Representar la información:</strong> con tablas o
+                diagramas.
+              </li>
+              <li>
+                <strong>Descartar opciones:</strong> eliminación sistemática.
+              </li>
+              <li>
+                <strong>Prueba y error:</strong> verificar posibles respuestas.
+              </li>
+              <li>
+                <strong>Validación:</strong> comprobar que cumpla todas las
+                condiciones.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-razonamiento">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Diagramas y Esquemas -->
+        <section id="contenido-diagramas-esquemas" class="screen">
+          <h2 class="header-bar">DIAGRAMAS Y ESQUEMAS</h2>
+          <div class="content-box">
+            <p><strong>¿Qué son los Diagramas y Esquemas?</strong></p>
+            <p>
+              Representaciones gráficas que organizan y clarifican información.
+            </p>
+            <p><strong>Tipos frecuentes:</strong></p>
+            <ol>
+              <li><strong>Flujo:</strong> pasos secuenciales de un proceso.</li>
+              <li><strong>Conceptual:</strong> relaciones entre ideas.</li>
+              <li><strong>Tablas lógicas:</strong> matriz de posibilidades.</li>
+              <li><strong>Venn:</strong> intersecciones de conjuntos.</li>
+              <li>
+                <strong>Estructurales:</strong> jerarquías y subdivisiones.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-razonamiento">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Razonamiento Deductivo -->
+        <section id="contenido-razonamiento-deductivo" class="screen">
+          <h2 class="header-bar">RAZONAMIENTO DEDUCTIVO</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es el Razonamiento Deductivo?</strong></p>
+            <p>
+              Inferir conclusiones específicas a partir de principios generales.
+            </p>
+            <p><strong>Etapas:</strong></p>
+            <ol>
+              <li><strong>Premisas:</strong> afirmaciones generales.</li>
+              <li>
+                <strong>Reglas lógicas:</strong> modus ponens, modus tollens.
+              </li>
+              <li>
+                <strong>Conclusión:</strong> resultante de aplicar las reglas.
+              </li>
+              <li>
+                <strong>Validez:</strong> si las premisas son verdaderas, la
+                conclusión también.
+              </li>
+              <li>
+                <strong>Ejemplo:</strong> Si todos los A son B, y X es A,
+                entonces X es B.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-razonamiento">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Razonamiento Inductivo -->
+        <section id="contenido-razonamiento-inductivo" class="screen">
+          <h2 class="header-bar">RAZONAMIENTO INDUCTIVO</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es el Razonamiento Inductivo?</strong></p>
+            <p>
+              Generalizar una regla a partir de casos particulares observados.
+            </p>
+            <p><strong>Pasos:</strong></p>
+            <ol>
+              <li><strong>Observación:</strong> recopilar ejemplos.</li>
+              <li>
+                <strong>Detección de patrón:</strong> identificar regularidades.
+              </li>
+              <li>
+                <strong>Formulación:</strong> proponer una regla o hipótesis.
+              </li>
+              <li>
+                <strong>Verificación:</strong> contrastar con nuevos datos.
+              </li>
+              <li>
+                <strong>Limitación:</strong> conclusiones probables, no
+                absolutas.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-razonamiento">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Patrones y Secuencias -->
+        <section id="contenido-patrones-secuencias" class="screen">
+          <h2 class="header-bar">PATRONES Y SECUENCIAS</h2>
+          <div class="content-box">
+            <p><strong>¿Qué son los Patrones y Secuencias?</strong></p>
+            <p>
+              Orden de elementos que se repite o varía según una regla
+              establecida.
+            </p>
+            <p><strong>Categorías:</strong></p>
+            <ol>
+              <li>
+                <strong>Numéricos:</strong> operaciones constantes entre
+                términos.
+              </li>
+              <li>
+                <strong>Figurativos:</strong> cambio de formas o posiciones.
+              </li>
+              <li><strong>Simétricos:</strong> repetición especular.</li>
+              <li>
+                <strong>Alternantes:</strong> cambio periódico de estado o
+                color.
+              </li>
+              <li>
+                <strong>Incrementales:</strong> variaciones uniformes
+                (suma/resta).
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-razonamiento">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <!--INGLES-->
+      <div>
+        <!-- CONTENT: Vocabulary -->
+        <section id="contenido-ingles-vocabulario" class="screen">
+          <h2 class="header-bar">Vocabulary</h2>
+          <div class="content-box">
+            <p><strong>What is vocabulary?</strong></p>
+            <p>
+              Vocabulary is the set of words and expressions that make up a
+              language’s lexicon, essential for conveying ideas and
+              understanding texts.
+            </p>
+            <p><strong>Strategies to expand your vocabulary:</strong></p>
+            <ol>
+              <li>
+                <strong>Extensive reading:</strong> Read books, articles, and
+                news in English.
+              </li>
+              <li>
+                <strong>Flashcards:</strong> Actively review and quiz yourself
+                on new words.
+              </li>
+              <li>
+                <strong>Contextual learning:</strong> Learn words within real
+                sentences and scenarios.
+              </li>
+              <li>
+                <strong>Active use:</strong> Practice new vocabulary in speaking
+                and writing exercises.
+              </li>
+              <li>
+                <strong>Affixes:</strong> Use prefixes and suffixes to infer
+                meanings of unfamiliar words.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ingles">‹ Back</button>
+          </div>
+        </section>
+
+        <!-- CONTENT: Grammar -->
+        <section id="contenido-ingles-gramatica" class="screen">
+          <h2 class="header-bar">Grammar</h2>
+          <div class="content-box">
+            <p><strong>What is English grammar?</strong></p>
+            <p>
+              Grammar is the system of rules that govern sentence structure,
+              verb tenses, word order, and correct usage.
+            </p>
+            <p><strong>Key aspects:</strong></p>
+            <ol>
+              <li>
+                <strong>Verb tenses:</strong> Simple, continuous, perfect, and
+                perfect‐continuous forms.
+              </li>
+              <li>
+                <strong>SVO order:</strong> Subject‐Verb‐Object as the basic
+                sentence structure.
+              </li>
+              <li>
+                <strong>Agreement:</strong> Matching verbs and pronouns to
+                subject number and person.
+              </li>
+              <li>
+                <strong>Auxiliary verbs:</strong> Used to form questions,
+                negatives, and emphatic statements.
+              </li>
+              <li>
+                <strong>Modals:</strong> Express ability, permission,
+                obligation, and possibility (can, must, should, etc.).
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ingles">‹ Back</button>
+          </div>
+        </section>
+
+        <!-- CONTENT: Listening Comprehension -->
+        <section id="contenido-ingles-comprension-auditiva" class="screen">
+          <h2 class="header-bar">Listening Comprehension</h2>
+          <div class="content-box">
+            <p><strong>What is listening comprehension?</strong></p>
+            <p>
+              The ability to understand spoken English across different accents
+              and speeds.
+            </p>
+            <p><strong>Strategies to improve:</strong></p>
+            <ol>
+              <li>
+                <strong>Active listening:</strong> Focus on meaning rather than
+                translating word for word.
+              </li>
+              <li>
+                <strong>Varied exposure:</strong> Use podcasts, videos, and
+                real‐life conversations.
+              </li>
+              <li>
+                <strong>Prediction:</strong> Anticipate content based on context
+                and topic.
+              </li>
+              <li>
+                <strong>Note‐taking:</strong> Jot down key words and main ideas.
+              </li>
+              <li>
+                <strong>Repetition:</strong> Replay difficult segments until
+                clear.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ingles">‹ Back</button>
+          </div>
+        </section>
+
+        <!-- CONTENT: Reading Comprehension -->
+        <section id="contenido-ingles-comprension-lectora" class="screen">
+          <h2 class="header-bar">Reading Comprehension</h2>
+          <div class="content-box">
+            <p><strong>What is reading comprehension?</strong></p>
+            <p>
+              The skill of interpreting and analyzing written English,
+              identifying main ideas and details.
+            </p>
+            <p><strong>Techniques:</strong></p>
+            <ol>
+              <li>
+                <strong>Skimming:</strong> Quickly reading to get the overall
+                gist.
+              </li>
+              <li>
+                <strong>Scanning:</strong> Looking for specific information or
+                keywords.
+              </li>
+              <li>
+                <strong>Inference:</strong> Deducing meaning from context.
+              </li>
+              <li>
+                <strong>Guiding questions:</strong> Formulate questions before
+                reading to focus your attention.
+              </li>
+              <li>
+                <strong>Summarizing:</strong> Paraphrase key points in your own
+                words.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ingles">‹ Back</button>
+          </div>
+        </section>
+
+        <!-- CONTENT: Speaking -->
+        <section id="contenido-ingles-speaking" class="screen">
+          <h2 class="header-bar">Speaking</h2>
+          <div class="content-box">
+            <p><strong>What is speaking?</strong></p>
+            <p>
+              The practice of producing spoken English to achieve fluency,
+              accuracy, and clear pronunciation.
+            </p>
+            <p><strong>Tips for improvement:</strong></p>
+            <ol>
+              <li>
+                <strong>Real conversations:</strong> Practice with native
+                speakers or classmates.
+              </li>
+              <li>
+                <strong>Feedback:</strong> Seek corrections on pronunciation and
+                grammar.
+              </li>
+              <li>
+                <strong>Idioms & expressions:</strong> Incorporate common
+                phrases for natural speech.
+              </li>
+              <li>
+                <strong>Intonation:</strong> Work on rhythm, stress, and tone.
+              </li>
+              <li>
+                <strong>Role‐plays:</strong> Simulate real‐life scenarios to
+                build confidence.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ingles">‹ Back</button>
+          </div>
+        </section>
+
+        <!-- CONTENT: Writing -->
+        <section id="contenido-ingles-writing" class="screen">
+          <h2 class="header-bar">Writing</h2>
+          <div class="content-box">
+            <p><strong>What is writing?</strong></p>
+            <p>
+              The process of composing text in English, from planning to final
+              revision.
+            </p>
+            <p><strong>Step‐by‐step process:</strong></p>
+            <ol>
+              <li>
+                <strong>Planning:</strong> Define purpose, audience, and
+                structure.
+              </li>
+              <li>
+                <strong>Drafting:</strong> Write freely without worrying about
+                errors.
+              </li>
+              <li>
+                <strong>Revising:</strong> Correct grammar, vocabulary, and
+                coherence.
+              </li>
+              <li>
+                <strong>Editing:</strong> Polish style, clarity, and flow.
+              </li>
+              <li>
+                <strong>Final version:</strong> Format and proofread for
+                accuracy.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-ingles">‹ Back</button>
+          </div>
+        </section>
+      </div>
+
+      <!-- ARTE Y CULTURA-->
+      <div>
+        <!-- Contenido Historia del arte -->
+        <section id="contenido-historia-arte" class="screen">
+          <h2 class="header-bar">HISTORIA DEL ARTE</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Historia del Arte?</strong></p>
+            <p>
+              Disciplina que estudia la evolución de las manifestaciones
+              artísticas a lo largo del tiempo, analizando estilos, técnicas y
+              contextos culturales.
+            </p>
+            <p><strong>Periodos principales:</strong></p>
+            <ol>
+              <li>
+                <strong>Arte rupestre:</strong> primeras expresiones en cuevas y
+                abrigos.
+              </li>
+              <li>
+                <strong>Arte clásico:</strong> Grecia y Roma, énfasis en
+                proporción y armonía.
+              </li>
+              <li>
+                <strong>Renacimiento:</strong> vuelta a la antigüedad,
+                perspectiva y humanismo.
+              </li>
+              <li><strong>Barroco:</strong> dramatismo, luz y movimiento.</li>
+              <li>
+                <strong>Modernismo:</strong> ruptura con la tradición, nuevas
+                técnicas y materiales.
+              </li>
+              <li>
+                <strong>Vanguardias:</strong> cubismo, futurismo, dadaísmo,
+                surrealismo.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-arte">‹ Regresar</button>
+          </div>
+        </section>
+
+        <!-- Contenido Movimientos artísticos -->
+        <section id="contenido-movimientos-artistico" class="screen">
+          <h2 class="header-bar">MOVIMIENTOS ARTÍSTICOS</h2>
+          <div class="content-box">
+            <p><strong>¿Qué son los Movimientos Artísticos?</strong></p>
+            <p>
+              Conjuntos de artistas con ideas y estilos afines que marcan
+              tendencias en una época determinada.
+            </p>
+            <p><strong>Ejemplos destacados:</strong></p>
+            <ol>
+              <li>
+                <strong>Renacimiento:</strong> equilibrio y perfecto
+                naturalismo.
+              </li>
+              <li>
+                <strong>Impresionismo:</strong> capturar la luz y el color en el
+                instante.
+              </li>
+              <li>
+                <strong>Cubismo:</strong> formas fragmentadas y múltiples puntos
+                de vista.
+              </li>
+              <li>
+                <strong>Surrealismo:</strong> exploración del subconsciente y lo
+                onírico.
+              </li>
+              <li>
+                <strong>Abstracto:</strong> no representación de figuras reales.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-arte">‹ Regresar</button>
+          </div>
+        </section>
+
+        <!-- Contenido Patrimonio cultural -->
+        <section id="contenido-patrimonio-cultural" class="screen">
+          <h2 class="header-bar">PATRIMONIO CULTURAL</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es el Patrimonio Cultural?</strong></p>
+            <p>
+              Conjunto de bienes, tanto materiales como inmateriales, que un
+              grupo valora por su significación histórica, artística o social.
+            </p>
+            <p><strong>Tipos de patrimonio:</strong></p>
+            <ol>
+              <li>
+                <strong>Tangible:</strong> monumentos, obras de arte, sitios
+                arqueológicos.
+              </li>
+              <li>
+                <strong>Intangible:</strong> tradiciones, músicas, danzas,
+                festividades.
+              </li>
+              <li>
+                <strong>Natural:</strong> paisajes y espacios protegidos de
+                valor cultural.
+              </li>
+              <li>
+                <strong>Documental:</strong> archivos, manuscritos y registros
+                históricos.
+              </li>
+              <li>
+                <strong>Inmaterial:</strong> conocimientos, técnicas y
+                expresiones vivas.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-arte">‹ Regresar</button>
+          </div>
+        </section>
+
+        <!-- Contenido Artes plásticas -->
+        <section id="contenido-artes-plasticas" class="screen">
+          <h2 class="header-bar">ARTES PLÁSTICAS</h2>
+          <div class="content-box">
+            <p><strong>¿Qué son las Artes Plásticas?</strong></p>
+            <p>
+              Manifestaciones artísticas que trabajan materiales sólidos o
+              líquidos para crear objetos visuales.
+            </p>
+            <p><strong>Técnicas comunes:</strong></p>
+            <ol>
+              <li><strong>Pintura:</strong> óleo, acrílico, acuarela.</li>
+              <li><strong>Escultura:</strong> piedra, madera, metal.</li>
+              <li>
+                <strong>Grabado:</strong> xilografía, linóleo, punta seca.
+              </li>
+              <li><strong>Dibujo:</strong> lápiz, carboncillo, tinta.</li>
+              <li><strong>Cerámica:</strong> modelado, esmaltado y cocción.</li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-arte">‹ Regresar</button>
+          </div>
+        </section>
+
+        <!-- Contenido Teatro y danza -->
+        <section id="contenido-teatro-danza" class="screen">
+          <h2 class="header-bar">TEATRO Y DANZA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es el Teatro y la Danza?</strong></p>
+            <p>
+              Artes escénicas que combinan actuación, movimiento y puesta en
+              escena para contar historias o expresar emociones.
+            </p>
+            <p><strong>Elementos esenciales:</strong></p>
+            <ol>
+              <li>
+                <strong>Dramaturgia:</strong> guion y construcción narrativa.
+              </li>
+              <li>
+                <strong>Coreografía:</strong> diseño del movimiento en danza.
+              </li>
+              <li><strong>Escenografía:</strong> espacio, luces y sonido.</li>
+              <li>
+                <strong>Vestuario:</strong> vestimenta que define personajes.
+              </li>
+              <li>
+                <strong>Interpretación:</strong> expresión corporal y vocal.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-arte">‹ Regresar</button>
+          </div>
+        </section>
+
+        <!-- Contenido Arte contemporáneo -->
+        <section id="contenido-arte-contemporaneo" class="screen">
+          <h2 class="header-bar">ARTE CONTEMPORÁNEO</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es el Arte Contemporáneo?</strong></p>
+            <p>
+              Tendencias artísticas actuales, caracterizadas por la
+              experimentación y la diversidad de medios y formatos.
+            </p>
+            <p><strong>Líneas de trabajo:</strong></p>
+            <ol>
+              <li>
+                <strong>Instalación:</strong> obras a gran escala e
+                interactivas.
+              </li>
+              <li><strong>Performance:</strong> acción artística en vivo.</li>
+              <li>
+                <strong>Arte digital:</strong> multimedia y realidad virtual.
+              </li>
+              <li><strong>Conceptual:</strong> énfasis en idea sobre forma.</li>
+              <li>
+                <strong>Ecoarte:</strong> conciencia medioambiental en la
+                creación.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-arte">‹ Regresar</button>
+          </div>
+        </section>
+      </div>
+
+      <!-- MUSICA -->
+      <div>
+        <!-- Contenido Teoría Musical -->
+        <section id="contenido-teoria-musical" class="screen">
+          <h2 class="header-bar">TEORÍA MUSICAL</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la Teoría Musical?</strong></p>
+            <p>
+              Conjunto de conceptos y reglas que explican la estructura del
+              sonido: notas, escalas y armonía.
+            </p>
+            <p><strong>Elementos fundamentales:</strong></p>
+            <ol>
+              <li>
+                <strong>Notas y alturas:</strong> Do, Re, Mi…, distancias
+                semitónicas.
+              </li>
+              <li><strong>Escalas:</strong> mayor, menor y modos.</li>
+              <li>
+                <strong>Intervalos:</strong> distancia entre dos notas (sexta,
+                tercera, octava…).
+              </li>
+              <li>
+                <strong>Acordes:</strong> combinación de tres o más notas
+                simultáneas.
+              </li>
+              <li>
+                <strong>Armonía:</strong> progresión y función de los acordes en
+                un contexto.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-musica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Instrumentos -->
+        <section id="contenido-instrumentos" class="screen">
+          <h2 class="header-bar">INSTRUMENTOS</h2>
+          <div class="content-box">
+            <p><strong>¿Qué son los instrumentos musicales?</strong></p>
+            <p>
+              Dispositivos que producen sonido mediante diversos mecanismos:
+              vibración, viento o percusión.
+            </p>
+            <p><strong>Familias instrumentales:</strong></p>
+            <ol>
+              <li>
+                <strong>Cuerda:</strong> violín, guitarra, chelo (sonido por
+                vibración de cuerdas).
+              </li>
+              <li>
+                <strong>Viento madera:</strong> flauta, clarinete, oboe (sonido
+                por columna de aire).
+              </li>
+              <li>
+                <strong>Viento metal:</strong> trompeta, trombón, trompa
+                (requieren embocadura metálica).
+              </li>
+              <li>
+                <strong>Percusión:</strong> batería, xilófono, timbales
+                (percusión directa o con baquetas).
+              </li>
+              <li>
+                <strong>Teclado:</strong> piano, órgano, sintetizador
+                (mecanismos diversos).
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-musica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Ritmo y Métrica -->
+        <section id="contenido-ritmo-metrica" class="screen">
+          <h2 class="header-bar">RITMO Y MÉTRICA</h2>
+          <div class="content-box">
+            <p>
+              <strong>¿Qué es el Ritmo?</strong> Organización del sonido en
+              unidades de tiempo; el pulso.
+            </p>
+            <p>
+              <strong>¿Qué es la Métrica?</strong> Dividir el compás en tiempos
+              fuertes y débiles.
+            </p>
+            <p><strong>Conceptos clave:</strong></p>
+            <ol>
+              <li>
+                <strong>Pulso:</strong> latido constante que marca la velocidad.
+              </li>
+              <li>
+                <strong>Compás:</strong> grupo de tiempos (2/4, 3/4, 4/4…).
+              </li>
+              <li>
+                <strong>Figura y silencio:</strong> negra, corchea, blanca,
+                etc., y sus pausas.
+              </li>
+              <li><strong>Contratiempo:</strong> acento en tiempo débil.</li>
+              <li>
+                <strong>Polirritmia:</strong> superposición de diferentes
+                patrones rítmicos.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-musica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Melodía -->
+        <section id="contenido-melodia" class="screen">
+          <h2 class="header-bar">MELODÍA</h2>
+          <div class="content-box">
+            <p>
+              <strong>¿Qué es la Melodía?</strong> Sucesión de notas que crean
+              una frase musical reconocible.
+            </p>
+            <p><strong>Características:</strong></p>
+            <ol>
+              <li>
+                <strong>Frase:</strong> unidad musical con inicio, desarrollo y
+                cierre.
+              </li>
+              <li>
+                <strong>Motivo:</strong> fragmento breve que se repite o varía.
+              </li>
+              <li>
+                <strong>Rango:</strong> distancia entre nota más alta y más
+                baja.
+              </li>
+              <li>
+                <strong>Movimiento:</strong> conjunt o disjunt (pasos vs.
+                saltos).
+              </li>
+              <li>
+                <strong>Ornamentación:</strong> adorno como trinos y mordentes.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-musica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Géneros Musicales -->
+        <section id="contenido-generos-musicales" class="screen">
+          <h2 class="header-bar">GÉNEROS MUSICALES</h2>
+          <div class="content-box">
+            <p>
+              <strong>¿Qué son los géneros musicales?</strong> Categorías
+              basadas en estilo, ritmo e instrumentos.
+            </p>
+            <p><strong>Ejemplos representativos:</strong></p>
+            <ol>
+              <li><strong>Clásica:</strong> sinfónica y de cámara.</li>
+              <li><strong>Jazz:</strong> improvisación y swing.</li>
+              <li>
+                <strong>Rock:</strong> guitarra eléctrica y ritmo marcado.
+              </li>
+              <li>
+                <strong>Pop:</strong> melodías pegajosas y producción
+                electrónica.
+              </li>
+              <li>
+                <strong>Música tradicional:</strong> folclore y ritmos
+                autóctonos.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-musica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Historia de la Música -->
+        <section id="contenido-historia-musica" class="screen">
+          <h2 class="header-bar">HISTORIA DE LA MÚSICA</h2>
+          <div class="content-box">
+            <p><strong>Breve recorrido histórico:</strong></p>
+            <ol>
+              <li>
+                <strong>Música Antigua:</strong> gregoriana y civilizaciones
+                clásicas.
+              </li>
+              <li>
+                <strong>Música Medieval:</strong> cantos monódicos y polifonía
+                temprana.
+              </li>
+              <li>
+                <strong>Renacimiento:</strong> armonía y desarrollo de formas
+                vocales.
+              </li>
+              <li><strong>Barroco:</strong> contrapunto y ópera.</li>
+              <li><strong>Clasicismo:</strong> equilibrio y sinfonía.</li>
+              <li>
+                <strong>Romanticismo:</strong> expresividad y virtuosismo.
+              </li>
+              <li>
+                <strong>Siglo XX–XXI:</strong> vanguardia, electrónica y
+                globalización.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-musica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <!--Educacion fisica-->
+      <div>
+        <!-- Contenido Deportes -->
+        <section id="contenido-deportes" class="screen">
+          <h2 class="header-bar">DEPORTES</h2>
+          <div class="content-box">
+            <p><strong>¿Qué son los deportes?</strong></p>
+            <p>
+              Actividades físicas regladas que promueven la salud, la
+              competencia y el trabajo en equipo.
+            </p>
+            <p><strong>Aspectos clave:</strong></p>
+            <ol>
+              <li><strong>Tipo de deporte:</strong> individual o colectivo.</li>
+              <li>
+                <strong>Reglas:</strong> normas que regulan la práctica y la
+                competencia.
+              </li>
+              <li>
+                <strong>Entrenamiento:</strong> planificación de sesiones y
+                periodización.
+              </li>
+              <li>
+                <strong>Condición física:</strong> resistencia, fuerza,
+                velocidad y flexibilidad.
+              </li>
+              <li>
+                <strong>Fair play:</strong> respeto, ética y juego limpio.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-fisica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Nutrición -->
+        <section id="contenido-nutricion" class="screen">
+          <h2 class="header-bar">NUTRICIÓN</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la nutrición?</strong></p>
+            <p>
+              Proceso de obtención, digestión y asimilación de nutrientes
+              necesarios para el funcionamiento del cuerpo.
+            </p>
+            <p><strong>Componentes esenciales:</strong></p>
+            <ol>
+              <li>
+                <strong>Macronutrientes:</strong> carbohidratos, proteínas y
+                grasas.
+              </li>
+              <li><strong>Micronutrientes:</strong> vitaminas y minerales.</li>
+              <li><strong>Hidratación:</strong> ingesta adecuada de agua.</li>
+              <li>
+                <strong>Dieta equilibrada:</strong> variedad de alimentos en
+                proporciones adecuadas.
+              </li>
+              <li>
+                <strong>Suplementación:</strong> apoyo nutricional cuando es
+                necesario.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-fisica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Anatomía básica -->
+        <section id="contenido-anatomia-basica" class="screen">
+          <h2 class="header-bar">ANATOMÍA BÁSICA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la anatomía básica?</strong></p>
+            <p>
+              Estudio de la estructura y organización de los órganos y sistemas
+              del cuerpo humano.
+            </p>
+            <p><strong>Sistemas principales:</strong></p>
+            <ol>
+              <li>
+                <strong>Sistema musculoesquelético:</strong> huesos, músculos y
+                articulaciones.
+              </li>
+              <li>
+                <strong>Sistema circulatorio:</strong> corazón y vasos
+                sanguíneos.
+              </li>
+              <li>
+                <strong>Sistema respiratorio:</strong> pulmones y vías aéreas.
+              </li>
+              <li>
+                <strong>Sistema nervioso:</strong> cerebro, médula y nervios.
+              </li>
+              <li>
+                <strong>Sistema digestivo:</strong> órganos de ingestión y
+                absorción.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-fisica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Técnicas de ejercicio -->
+        <section id="contenido-tecnicas-ejercicio" class="screen">
+          <h2 class="header-bar">TÉCNICAS DE EJERCICIO</h2>
+          <div class="content-box">
+            <p><strong>¿Qué son las técnicas de ejercicio?</strong></p>
+            <p>
+              Conjunto de métodos y protocolos para realizar actividad física de
+              forma segura y eficaz.
+            </p>
+            <p><strong>Fases de la sesión:</strong></p>
+            <ol>
+              <li>
+                <strong>Calentamiento:</strong> preparar músculos y
+                articulaciones.
+              </li>
+              <li>
+                <strong>Trabajo principal:</strong> ejercicios de resistencia,
+                fuerza o flexibilidad.
+              </li>
+              <li>
+                <strong>Enfriamiento:</strong> recuperación gradual de la
+                frecuencia cardíaca.
+              </li>
+              <li>
+                <strong>Postura correcta:</strong> alineación corporal para
+                evitar lesiones.
+              </li>
+              <li>
+                <strong>Progresión:</strong> aumentar intensidad o volumen de
+                forma gradual.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-fisica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Salud y bienestar -->
+        <section id="contenido-salud-bienestar" class="screen">
+          <h2 class="header-bar">SALUD Y BIENESTAR</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la salud y el bienestar?</strong></p>
+            <p>
+              Estado de completo equilibrio físico, mental y social, más allá de
+              la ausencia de enfermedad.
+            </p>
+            <p><strong>Claves para mantenerlo:</strong></p>
+            <ol>
+              <li>
+                <strong>Actividad física regular:</strong> mantener hábitos de
+                movimiento diario.
+              </li>
+              <li>
+                <strong>Alimentación sana:</strong> dieta variada y equilibrada.
+              </li>
+              <li>
+                <strong>Descanso adecuado:</strong> sueño reparador y pausas
+                activas.
+              </li>
+              <li>
+                <strong>Manejo del estrés:</strong> técnicas de relajación y
+                mindfulness.
+              </li>
+              <li>
+                <strong>Prevención de lesiones:</strong> ergonomía y uso de
+                equipo apropiado.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-fisica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Trabajo en equipo -->
+        <section id="contenido-trabajo-equipo" class="screen">
+          <h2 class="header-bar">TRABAJO EN EQUIPO</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es el trabajo en equipo?</strong></p>
+            <p>
+              Colaboración coordinada de varias personas para lograr objetivos
+              comunes de forma eficaz.
+            </p>
+            <p><strong>Elementos esenciales:</strong></p>
+            <ol>
+              <li>
+                <strong>Comunicación:</strong> intercambio claro y continuo de
+                información.
+              </li>
+              <li>
+                <strong>Cooperación:</strong> apoyo mutuo y reparto de tareas.
+              </li>
+              <li>
+                <strong>Roles definidos:</strong> responsabilidades asignadas a
+                cada miembro.
+              </li>
+              <li>
+                <strong>Objetivos comunes:</strong> metas compartidas y
+                entendidas por todos.
+              </li>
+              <li>
+                <strong>Resolución de conflictos:</strong> manejo constructivo
+                de diferencias.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-fisica">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <!--EDUCACION PARA EL TRABAJO-->
+      <div>
+        <!-- Contenido Habilidades Técnicas -->
+        <section id="contenido-habilidades-tecnicas" class="screen">
+          <h2 class="header-bar">HABILIDADES TÉCNICAS</h2>
+          <div class="content-box">
+            <p><strong>¿Qué son las habilidades técnicas?</strong></p>
+            <p>
+              Competencias específicas para manejar herramientas, maquinaria y
+              procesos propios de un oficio o profesión.
+            </p>
+            <p><strong>Elementos clave:</strong></p>
+            <ol>
+              <li>
+                <strong>Conocimiento de herramientas:</strong> uso correcto de
+                maquinaria y equipos.
+              </li>
+              <li>
+                <strong>Interpretación de manuales:</strong> comprensión de
+                instrucciones técnicas.
+              </li>
+              <li>
+                <strong>Procedimientos operativos:</strong> metodología y pasos
+                estandarizados.
+              </li>
+              <li>
+                <strong>Mantenimiento preventivo:</strong> cuidado y calibración
+                de equipos.
+              </li>
+              <li>
+                <strong>Control de calidad:</strong> verificación de estándares
+                y resultados.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-trabajo">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Emprendimiento -->
+        <section id="contenido-emprendimiento" class="screen">
+          <h2 class="header-bar">EMPRENDIMIENTO</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es el emprendimiento?</strong></p>
+            <p>
+              Proceso de identificar oportunidades, diseñar una idea de negocio
+              y convertirla en una empresa sostenible.
+            </p>
+            <p><strong>Fases del emprendimiento:</strong></p>
+            <ol>
+              <li>
+                <strong>Generación de ideas:</strong> lluvia de propuestas y
+                selección de la más viable.
+              </li>
+              <li>
+                <strong>Plan de negocio:</strong> análisis de mercado, modelo de
+                ingresos y proyecciones.
+              </li>
+              <li>
+                <strong>Financiación:</strong> búsqueda de inversores,
+                crowdfunding y créditos.
+              </li>
+              <li>
+                <strong>Lanzamiento:</strong> marketing, adquisición de clientes
+                y operaciones iniciales.
+              </li>
+              <li>
+                <strong>Crecimiento:</strong> escalabilidad, diversificación y
+                optimización.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-trabajo">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido TIC y Tecnología -->
+        <section id="contenido-tic-tecnologia" class="screen">
+          <h2 class="header-bar">TIC Y TECNOLOGÍA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué son las TIC?</strong></p>
+            <p>
+              Tecnologías de la Información y la Comunicación que facilitan el
+              manejo y transmisión de datos.
+            </p>
+            <p><strong>Componentes principales:</strong></p>
+            <ol>
+              <li>
+                <strong>Hardware:</strong> dispositivos y equipos físicos.
+              </li>
+              <li>
+                <strong>Software:</strong> aplicaciones y sistemas operativos.
+              </li>
+              <li>
+                <strong>Redes:</strong> infraestructuras de comunicación y
+                protocolos.
+              </li>
+              <li>
+                <strong>Seguridad:</strong> protección de información y
+                ciberseguridad.
+              </li>
+              <li>
+                <strong>Herramientas colaborativas:</strong> plataformas para
+                trabajo en línea.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-trabajo">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Seguridad e Higiene -->
+        <section id="contenido-seguridad-higiene" class="screen">
+          <h2 class="header-bar">SEGURIDAD E HIGIENE</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la seguridad e higiene industrial?</strong></p>
+            <p>
+              Prácticas y normas para prevenir accidentes y enfermedades en el
+              entorno laboral.
+            </p>
+            <p><strong>Aspectos clave:</strong></p>
+            <ol>
+              <li>
+                <strong>EPP:</strong> uso de cascos, guantes, gafas y
+                protecciones.
+              </li>
+              <li>
+                <strong>Limpieza y orden:</strong> ambientes libres de
+                obstáculos y suciedad.
+              </li>
+              <li>
+                <strong>Ergonomía:</strong> diseño de puestos para evitar
+                lesiones.
+              </li>
+              <li>
+                <strong>Identificación de riesgos:</strong> detección y
+                evaluación de peligros.
+              </li>
+              <li>
+                <strong>Capacitación:</strong> formación continua en
+                procedimientos de seguridad.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-trabajo">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Planificación Laboral -->
+        <section id="contenido-planificacion-laboral" class="screen">
+          <h2 class="header-bar">PLANIFICACIÓN LABORAL</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la planificación laboral?</strong></p>
+            <p>
+              Proceso de organizar tareas, recursos y tiempos para cumplir
+              objetivos profesionales.
+            </p>
+            <p><strong>Pasos del proceso:</strong></p>
+            <ol>
+              <li>
+                <strong>Definir metas:</strong> objetivos claros y medibles.
+              </li>
+              <li>
+                <strong>Asignar tareas:</strong> responsabilidades y plazos.
+              </li>
+              <li>
+                <strong>Gestionar recursos:</strong> humanos, materiales y
+                financieros.
+              </li>
+              <li>
+                <strong>Seguimiento:</strong> monitoreo de avances y ajustes.
+              </li>
+              <li>
+                <strong>Evaluación:</strong> análisis de resultados y mejoras.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-trabajo">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Trabajo Colaborativo -->
+        <section id="contenido-trabajo-colaborativo" class="screen">
+          <h2 class="header-bar">TRABAJO COLABORATIVO</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es el trabajo colaborativo?</strong></p>
+            <p>
+              Colaboración coordinada entre personas para alcanzar objetivos
+              comunes compartiendo conocimientos y habilidades.
+            </p>
+            <p><strong>Claves para el éxito:</strong></p>
+            <ol>
+              <li>
+                <strong>Comunicación:</strong> intercambio claro y constante de
+                información.
+              </li>
+              <li>
+                <strong>Roles definidos:</strong> asignación según fortalezas.
+              </li>
+              <li>
+                <strong>Coordinación:</strong> sincronización de actividades.
+              </li>
+              <li>
+                <strong>Retroalimentación:</strong> revisión continua y ajustes.
+              </li>
+              <li>
+                <strong>Objetivos compartidos:</strong> metas alineadas y
+                compromiso grupal.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-trabajo">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <!--Etica  y valores -->
+      <div>
+        <!-- Contenido Honestidad -->
+        <section id="contenido-honestidad" class="screen">
+          <h2 class="header-bar">HONESTIDAD</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la honestidad?</strong></p>
+            <p>
+              La honestidad es la cualidad de actuar con verdad y transparencia,
+              sin engaños ni falsedades.
+            </p>
+            <ol>
+              <li>
+                <strong>Veracidad:</strong> decir siempre la verdad, incluso
+                cuando sea difícil.
+              </li>
+              <li>
+                <strong>Transparencia:</strong> mostrar las intenciones y
+                acciones de forma clara.
+              </li>
+              <li>
+                <strong>Integridad:</strong> coherencia entre lo que se piensa,
+                se dice y se hace.
+              </li>
+              <li>
+                <strong>Responsabilidad:</strong> asumir las consecuencias de
+                los propios actos.
+              </li>
+              <li>
+                <strong>Respeto:</strong> reconocer y valorar los derechos de
+                los demás.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-etica-valores">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Respeto -->
+        <section id="contenido-respeto" class="screen">
+          <h2 class="header-bar">RESPETO</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es el respeto?</strong></p>
+            <p>
+              El respeto es la consideración y valoración hacia las personas,
+              sus ideas y diferencias.
+            </p>
+            <ol>
+              <li>
+                <strong>Reconocimiento:</strong> aceptar la dignidad y derechos
+                de todos.
+              </li>
+              <li>
+                <strong>Tolerancia:</strong> convivir con la diversidad de
+                opiniones y culturas.
+              </li>
+              <li>
+                <strong>Cortesía:</strong> comportarse de forma amable y
+                educada.
+              </li>
+              <li>
+                <strong>Empatía:</strong> ponerse en el lugar del otro antes de
+                actuar.
+              </li>
+              <li>
+                <strong>Escucha activa:</strong> atender sin interrumpir ni
+                juzgar.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-etica-valores">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Justicia -->
+        <section id="contenido-justicia" class="screen">
+          <h2 class="header-bar">JUSTICIA</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la justicia?</strong></p>
+            <p>
+              La justicia es el principio que busca la equidad y el trato
+              imparcial en las relaciones humanas.
+            </p>
+            <ol>
+              <li>
+                <strong>Igualdad:</strong> ofrecer las mismas oportunidades a
+                todos.
+              </li>
+              <li>
+                <strong>Imparcialidad:</strong> tomar decisiones sin
+                favoritismos.
+              </li>
+              <li>
+                <strong>Equidad:</strong> adaptar el trato según necesidades y
+                contextos.
+              </li>
+              <li>
+                <strong>Legalidad:</strong> respetar las normas y leyes
+                establecidas.
+              </li>
+              <li>
+                <strong>Reparación:</strong> corregir y compensar las
+                injusticias.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-etica-valores">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Responsabilidad -->
+        <section id="contenido-responsabilidad" class="screen">
+          <h2 class="header-bar">RESPONSABILIDAD</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la responsabilidad?</strong></p>
+            <p>
+              La responsabilidad es el compromiso de cumplir obligaciones y
+              asumir las consecuencias de las propias acciones.
+            </p>
+            <ol>
+              <li>
+                <strong>Cumplir compromisos:</strong> ejecutar tareas en el
+                tiempo y forma acordados.
+              </li>
+              <li>
+                <strong>Planificación:</strong> organizar recursos y tiempos
+                para alcanzar metas.
+              </li>
+              <li>
+                <strong>Rendición de cuentas:</strong> informar sobre resultados
+                y progresos.
+              </li>
+              <li>
+                <strong>Autonomía:</strong> tomar decisiones conscientes y
+                reflexionadas.
+              </li>
+              <li>
+                <strong>Conciencia del impacto:</strong> considerar cómo afectan
+                nuestros actos a otros.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-etica-valores">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+
+        <!-- Contenido Solidaridad -->
+        <section id="contenido-solidaridad" class="screen">
+          <h2 class="header-bar">SOLIDARIDAD</h2>
+          <div class="content-box">
+            <p><strong>¿Qué es la solidaridad?</strong></p>
+            <p>
+              La solidaridad es la disposición a colaborar y apoyar a otras
+              personas, compartiendo recursos y esfuerzos.
+            </p>
+            <ol>
+              <li>
+                <strong>Apoyo mutuo:</strong> ayudar activamente a quienes lo
+                necesitan.
+              </li>
+              <li>
+                <strong>Cooperación:</strong> trabajar juntos para lograr
+                objetivos comunes.
+              </li>
+              <li>
+                <strong>Empatía:</strong> comprender y compartir las emociones
+                de los demás.
+              </li>
+              <li>
+                <strong>Participación comunitaria:</strong> involucrarse en
+                iniciativas colectivas.
+              </li>
+              <li>
+                <strong>Generosidad:</strong> compartir de manera desinteresada.
+              </li>
+            </ol>
+          </div>
+          <div class="content-nav">
+            <button class="nav-btn" data-target="temas-etica-valores">
+              ‹ Regresar
+            </button>
+          </div>
+        </section>
+      </div>
+      <!-- AQUI TERMINAAAAAAAAAAAAAAAAAAAAA-->
+
+      <!-- Pantalla de Contenido de Tema -->
+      <section id="contenido" class="screen">
+        <h2 class="header-bar">LA INVESTIGACIÓN CIENTÍFICA</h2>
+        <div class="content-box">
+          <p><strong>Etapas del proceso de investigación científica</strong></p>
+          <p>
+            Aunque pueden variar ligeramente según el enfoque (cuantitativo o
+            cualitativo), disciplina o tipo de investigación...
+          </p>
+          <ol>
+            <li>
+              <strong>Planteamiento del problema.</strong> Consiste en
+              identificar y formular claramente el problema o fenómeno que se
+              desea estudiar...
+            </li>
+            <li>
+              <strong>Revisión de la literatura.</strong> Implica el análisis
+              exhaustivo de investigaciones previas, teorías y conceptos
+              relacionados...
+            </li>
+            <!-- … -->
+          </ol>
+        </div>
+        <div class="content-nav">
+          <button class="nav-btn" data-target="temas">‹ Regresar</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horarios de Clases</title>
+    <!-- Apunta al CSS global -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Botón Volver manejado por main.js -->
+      <a href="#" class="btn btn-secondary btn-volver">← Volver</a>
+      <h1>Horarios de Clases</h1>
+    </header>
+
+    <main>
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="index.html?materia=temas-ciencia"
+                >Ciencia y Tecnología</a
+              >
+            </td>
+            <td><a href="index.html?materia=tutoria">Tutoría</a></td>
+            <td><a href="index.html?materia=ingles">Inglés</a></td>
+            <td><a href="index.html?materia=religion">Religión</a></td>
+            <td>
+              <a href="index.html?materia=temas-razonamiento"
+                >Razonamiento Matemático</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="index.html?materia=temas-matematica">Matemática</a>
+            </td>
+            <td>
+              <a href="index.html?materia=comprension-lectora"
+                >Comprensión Lectora</a
+              >
+            </td>
+            <td>
+              <a href="index.html?materia=temas-comunicacion">Comunicación</a>
+            </td>
+            <td>
+              <a href="index.html?materia=temas-comunicacion">Comunicación</a>
+            </td>
+            <td><a href="index.html?materia=dpcc">DPCC</a></td>
+          </tr>
+          <tr>
+            <!-- Recreo 10:00–10:20 -->
+            <td colspan="5" class="break-row"></td>
+          </tr>
+          <tr>
+            <td><a href="index.html?materia=ingles">Inglés</a></td>
+            <td>
+              <a href="index.html?materia=educacion-fisica">Educación Física</a>
+            </td>
+            <td><a href="index.html?materia=sociales">Sociales</a></td>
+            <td>
+              <a href="index.html?materia=arte-educacion-fisica"
+                >Arte y Educación Física</a
+              >
+            </td>
+            <td>
+              <a href="index.html?materia=temas-ciencia"
+                >Ciencia y Tecnología</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="index.html?materia=arte-cultura">Arte y Cultura</a>
+            </td>
+            <td><a href="index.html?materia=sociales">Sociales</a></td>
+            <td><a href="index.html?materia=etica">Ética</a></td>
+            <td><a href="index.html?materia=sociales">Sociales</a></td>
+            <td><a href="index.html?materia=ept">E.P.T</a></td>
+          </tr>
+          <tr>
+            <td><a href="index.html?materia=dpcc">DPCC</a></td>
+            <td>
+              <a href="index.html?materia=temas-matematica">Matemática</a>
+            </td>
+            <td>
+              <a href="index.html?materia=temas-matematica">Matemática</a>
+            </td>
+            <td>
+              <a href="index.html?materia=temas-ciencia"
+                >Ciencia y Tecnología</a
+              >
+            </td>
+            <td><!-- Salida --></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <!-- Conecta con tu JS global -->
+    <script src="script.js"></script>
+  </body>
+</html>

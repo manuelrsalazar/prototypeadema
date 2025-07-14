@@ -1,0 +1,283 @@
+/* Paleta de colores */
+:root {
+  --bg-page: #faecd1;
+  --bg-card: #ffefef;
+  --header-bar: #d8e6f2;
+  --btn-primary: #98a896;
+  --btn-secondary: #b2c9ad;
+  --text-color: #333;
+}
+
+/* Reset global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Patrick Hand", cursive;
+  background: var(--bg-page);
+  color: var(--text-color);
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 100%;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+/* Navegación de pestañas */
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 0.75rem;
+  background: var(--btn-secondary);
+  border: none;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Patrick Hand", cursive;
+  font-size: 1.3rem; /* más grande y legible */
+  letter-spacing: 1px;
+  font-weight: bold; /* ← NEGRITA */
+}
+
+.tab-button.active {
+  background: var(--bg-card);
+}
+
+.tab-button[data-target="quienes"] {
+  margin-left: auto;
+}
+
+/* Pantallas */
+.screen {
+  display: none;
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 0 8px 8px 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.screen.active {
+  display: block;
+}
+
+/* Solo para la pantalla de inicio activa */
+section#inicio.screen.active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Columnas de inicio */
+.inicio-left,
+.inicio-right {
+  flex: 1;
+}
+
+/* Alinear contenido de la derecha */
+.inicio-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Tamaño de la mascota */
+.mascota {
+  max-width: 250px;
+  height: auto;
+}
+
+/* Logo */
+.logo {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Barra de encabezado */
+.header-bar {
+  background: var(--header-bar);
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* Grid de botones */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.grid-btn {
+  padding: 0.75rem;
+  background: #7b837d;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/* Botones estándar */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  text-decoration: none; /* <- AÑADE ESTO */
+  font-family: "Patrick Hand", cursive;
+  font-weight: bold;
+}
+
+.btn.primary {
+  background: var(--btn-primary);
+  color: black;
+}
+
+.btn.secondary {
+  background: var(--btn-secondary);
+  color: black;
+}
+
+/* Caja de texto */
+.content-box {
+  background: var(--bg-page);
+  padding: 1rem;
+  border-radius: 6px;
+  line-height: 1.4;
+}
+
+/* Navegación interna de contenido */
+.content-nav {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.nav-btn {
+  background: var(--btn-secondary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Logo enlazado */
+.logo-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo-img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Estilos de Horarios */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid var(--text-color);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.schedule-table th {
+  background: var(--header-bar);
+}
+
+.break-row {
+  height: 1.5rem;
+  background: #f0f0f0;
+}
+
+/* Enlaces de la tabla de horarios como botones */
+.schedule-table a {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  margin: 0.2rem;
+  background: var(--btn-secondary);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background 0.2s;
+}
+
+.schedule-table a:hover,
+.schedule-table a:focus {
+  background: var(--btn-primary);
+  color: #fff;
+}
+/* Contenedor para los botones en la pantalla de inicio */
+.home-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+.logo-decorada {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-family: "Patrick Hand", cursive;
+}
+
+.logo-decorada span {
+  display: inline-block;
+  padding: 0.2em 0.4em;
+  border-radius: 8px;
+  background-color: var(--bg-card);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: var(--text-color);
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+/* Colores pastel por letra */
+.logo-decorada span:nth-child(1) {
+  background-color: #f7d6d6; /* rosa claro */
+}
+.logo-decorada span:nth-child(2) {
+  background-color: #c6d8ec; /* azul claro */
+}
+.logo-decorada span:nth-child(3) {
+  background-color: #cbe3cc; /* verde claro */
+}
+.logo-decorada span:nth-child(4) {
+  background-color: #f9e4b7; /* amarillo claro */
+}
+.logo-decorada span:nth-child(5) {
+  background-color: #e5ccdf; /* lila claro */
+}
+
+.logo-decorada span:hover {
+  transform: scale(1.1);
+}
